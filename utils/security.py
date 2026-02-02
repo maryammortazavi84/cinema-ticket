@@ -17,7 +17,7 @@ def hash_password(password: str) -> Tuple[str, str]:
     """Hashes a password using PBKDF2 with HMAC-SHA256."""
     salt = uuid.uuid4().bytes
 
-    hashed = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 100000)
+    hashed = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 600000)
     return salt.hex(), hashed.hex()
 
 

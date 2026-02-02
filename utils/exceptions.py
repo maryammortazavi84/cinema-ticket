@@ -16,11 +16,7 @@ class UsernameAlreadyExistsError(CinemaTicketError):
 
 class InvalidPasswordError(CinemaTicketError):
     """Raised when password does not meet the minimum requirements."""
-    def __init__(self, password_length:int | None = None, *args):
-        if password_length is not None:
-            message = f"The password must be at least 4 characters long. Provided length: {password_length}."
-        else:
-            message = f"The password must be at least 4 characters long. "
+    def __init__(self, message: str = "Invalid password format.", *args):
         super().__init__(message, *args)
 
 class WrongPasswordError(CinemaTicketError):
@@ -34,6 +30,11 @@ class PasswordMismatchError(CinemaTicketError):
     def __init__(self, *args):
         message = "The new password and its confirmation do not match. Please try again."
         super().__init__(message, *args)
+
+class InvalidUserNameError(CinemaTicketError):
+    """raised when user name doesnt match the requierments"""
+    def __init__(self, *args):
+        message = "Username must be at least 3 characters long"
 
 class UserNotFoundError(CinemaTicketError):
     """Raised when a user with the given username is not found."""
@@ -61,6 +62,12 @@ class InsufficientBalanceError(CinemaTicketError):
             f"You need {self.shortfall:.2f} USD more."
         )
         super().__init__(message, *args)
+
+class InvalidAmountError(CinemaTicketError):
+    """Raised when the transaction amount is not positive."""
+    def __init__(self, amount: float):
+        self.amount = amount
+        super().__init__(f"Invalid amount: {amount}. Amount must be positive.")
 
 class SeatAlreadyReservedError(CinemaTicketError):
     """Raised when trying to reserve an already taken seat."""
