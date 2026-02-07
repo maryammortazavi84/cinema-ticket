@@ -1,8 +1,20 @@
 """
-Generic JSON storage utilities for the Cinema Ticket project.
+JSON storage layer for Cinema Ticket project.
 
-This module provides centralized and safe functions for loading and saving data
-to JSON files (users, showtimes, tickets, etc.).
+Users structure:
+
+{
+    "by_id": {
+        "user_id": {user_data}
+    },
+    "username_index": {
+        "username": "user_id"
+    }
+}
+
+This structure allows:
+- Fast lookup by ID
+- O(1) lookup by username using index
 """
 
 import json
@@ -51,13 +63,32 @@ def save_data(file_path: Path, data: list|dict) ->None:
 # Domain-specific helpers
 # =====================
 
+DEFAULT_USERS_STRUCTURE = {
+    "by_id": {},
+    "username_index": {}
+}
 
-def load_users() -> list:
-    """Loads the list of users from the users JSON file."""
-    return load_data(USERS_FILE, [])
 
-def save_users(users: list) -> None:
-    """saves the list of users to the users JSON file."""
+def load_users() -> dict:
+    """
+    Returns users data with structure:
+    {
+        "by_id": {...},
+        "username_index": {...}
+    }
+    """
+    data = load_data(USERS_FILE, DEFAULT_USERS_STRUCTURE)
+
+    if "by_id" not in data:
+        data["by_id"] = {}
+
+    if "username_index" not in data:
+        data["username_index"] = {}
+
+    return data
+
+def save_users(users: dict) -> None:
+    """Saves users dict with user_id as key"""
     return save_data(USERS_FILE, users)
 
 def load_showtimes() -> list:

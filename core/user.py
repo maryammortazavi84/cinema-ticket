@@ -11,7 +11,14 @@ from decimal import Decimal
 import re
 
 class User:
-    """Domain model representing a system user."""
+    """
+    Domain model representing a system user.
+
+    Handles user data, password security, wallet balance (with Decimal precision),
+    and basic validation for username, phone, and birth date.
+
+    Attributes are protected via properties and setters for encapsulation and validation.
+    """
 
     # CONSTRUCTOR 
     def __init__(self, 
@@ -26,6 +33,22 @@ class User:
                 wallet_balance: Decimal = Decimal("0.0"),
                 created_at: str | None = None
                 ):
+        """
+        Initialize a new user or load from stored data.
+
+        Args:
+            username: Unique username (min 3 chars)
+            password: Plain password (required for new users)
+            birth_date: Birth date string (multiple formats supported)
+            phone: Optional phone number (Iranian format: 09xxxxxxxxx)
+            user_id: Optional pre-generated ID (auto-generated if None)
+            salt/password_hash: For loading existing user
+            wallet_balance: Initial balance (non-negative Decimal)
+            created_at: ISO datetime string (auto-generated if None)
+
+        Raises:
+            Various Invalid*Error exceptions for validation failures
+        """
         
         # immutable/system fields
         self._id: str = user_id or generate_unique_id()

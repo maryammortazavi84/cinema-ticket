@@ -26,7 +26,7 @@ def verify_password(stored_salt_hex:str, stored_hash_hex:str, provided_password:
     salt = bytes.fromhex(stored_salt_hex)
     stored_hash = bytes.fromhex(stored_hash_hex)
 
-    computed_hash = hashlib.pbkdf2_hmac('sha256', provided_password.encode(), salt, 100000)
+    computed_hash = hashlib.pbkdf2_hmac('sha256', provided_password.encode(), salt, 600000)
 
     return hmac.compare_digest(computed_hash, stored_hash)
 
