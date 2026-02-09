@@ -214,7 +214,7 @@ class User:
             "birth_date" : self.birth_date,
             "salt" : self.salt,
             "password_hash" : self.password_hash,
-            "wallet_balance" : self.wallet_balance,
+            "wallet_balance" : str(self.wallet_balance),
             "created_at" : self._created_at.isoformat(),
         }
     
