@@ -16,6 +16,7 @@ from utils.exceptions import (
     WrongPasswordError,
     PasswordMismatchError
     )
+from utils.console import print_title, print_info, print_error
 
 from utils.logger import get_logger
 logger = get_logger(__name__)
@@ -204,6 +205,30 @@ def change_password(
     _save_user(user)
     logger.info(f"Password successfully changed for user {user_id}")
     return user
+
+
+def get_user_profile(user_id: str) -> User:
+    """
+    Retrieve a user's profile information.
+
+    Args:
+        user_id: Unique identifier of the user.
+
+    Returns:
+        User: User instance containing profile information.
+
+    Raises:
+        UserNotFoundError: If the user does not exist.
+        Exception: If loading the user fails.
+    """
+    try:
+        user = _load_user_by_id(user_id)
+        logger.info(f"User profile retrieved for user_id '{user_id}'")
+        return user
+    except Exception as e:
+        logger.error(f"Failed to retrieve user profile for user_id '{user_id}': {e}")
+        raise
+
 
 
     

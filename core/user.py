@@ -8,6 +8,7 @@ from utils.exceptions import (InvalidPasswordError,
                             InvalidPhoneNumberError,
                             InvalidBirthDateError)
 from decimal import Decimal
+from core.enums import UserRole
 import re
 
 class User:
@@ -31,7 +32,8 @@ class User:
                 salt: str | None = None,
                 password_hash: str | None = None,
                 wallet_balance: Decimal = Decimal("0.0"),
-                created_at: str | None = None
+                created_at: str | None = None,
+                role: UserRole = UserRole.USER
                 ):
         """
         Initialize a new user or load from stored data.
@@ -53,6 +55,7 @@ class User:
         # immutable/system fields
         self._id: str = user_id or generate_unique_id()
         self._created_at: datetime = (datetime.fromisoformat(created_at) if created_at else datetime.now())
+        self._role: UserRole = role
 
         # validated fields via setters
         self.username = username
@@ -79,6 +82,10 @@ class User:
     @property
     def created_at(self) -> datetime:
         return self._created_at
+    
+    @property
+    def role(self) -> UserRole:
+        return self._role
     
     @property
     def salt(self) -> str:
@@ -216,6 +223,7 @@ class User:
             "password_hash" : self.password_hash,
             "wallet_balance" : str(self.wallet_balance),
             "created_at" : self._created_at.isoformat(),
+            "role": self.role.value,
         }
     
     @classmethod
@@ -230,7 +238,18 @@ class User:
             password_hash=data["password_hash"],
             wallet_balance=data.get("wallet_balance", 0.0),
             created_at=data.get("created_at"),
+            role=UserRole(data.get("role", "user"))
         )
+    
+    def __str__(self):
+        return (
+        f"ID: {self.id}\n"
+        f"Username: {self.username}\n"
+        f"Phone: {self.phone or '-'}\n"
+        f"Birth date: {self.birth_date}\n"
+        f"Balance: {self.wallet_balance}\n"
+        f"Role: {self.role.value}"
+    )
 
 
 

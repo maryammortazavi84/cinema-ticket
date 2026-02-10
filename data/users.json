@@ -1,0 +1,18 @@
+{
+    "by_id": {
+        "fixed-user-id": {
+            "id": "fixed-user-id",
+            "username": "maryam",
+            "phone": "09123456789",
+            "birth_date": "1995-05-05",
+            "salt": "af069aa25c204f54ab9ac7fd5af83d52",
+            "password_hash": "d40ffe566cc8a02899b548b1af2d5b09e233e1fd708b8611bf63a0c598f27c2a",
+            "wallet_balance": "0.0",
+            "created_at": "2026-02-10T23:08:09.180923",
+            "role": "user"
+        }
+    },
+    "username_index": {
+        "maryam": "fixed-user-id"
+    }
+}

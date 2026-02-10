@@ -38,9 +38,8 @@ class InvalidUserNameError(CinemaTicketError):
 
 class UserNotFoundError(CinemaTicketError):
     """Raised when a user with the given username is not found."""
-    def __init__(self, username:str, *args):
-        self.username = username
-        message = f"No user found with the username '{username}'. Please check and try again."
+    def __init__(self,  *args):
+        message = f"No user found with that user name or id. Please check and try again."
         super().__init__(message, *args)
 
 class InvalidCredentialsError(CinemaTicketError):
