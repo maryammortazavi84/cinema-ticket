@@ -1,77 +1,117 @@
 """
-Manual end-to-end test for Authentication flow.
+Manual end-to-end test for UserService flow.
 
 This script:
-1. Registers a user
-2. Tries duplicate registration
-3. Logs in with correct credentials
-4. Logs in with wrong password
+1. Registers a user (via auth)
+2. Gets user profile
+3. Changes phone
+4. Changes username
+5. Changes password (correct flow)
+6. Tests wrong current password
+7. Tests duplicate username protection
 
 No mocks.
 Works with real JSON storage.
 """
 
-# from services.auth_service import register_user, login_user
+# from services.auth_service import register_user
+# from services.user_service import (
+#     change_phone,
+#     change_username,
+#     change_password,
+#     get_user_profile,
+# )
 # from utils.exceptions import (
 #     UsernameAlreadyExistsError,
-#     UserNotFoundError,
-#     InvalidCredentialsError,
+#     WrongPasswordError,
+#     PasswordMismatchError,
 # )
 
+# def run_user_service_flow_test():
+#     print("\n=== USER SERVICE FLOW TEST START ===\n")
 
-# def run_auth_flow_test():
-#     print("\n=== AUTH FLOW TEST START ===\n")
-
-#     username = "test_user"
+#     username = "user_service_test"
 #     password = "StrongPass123"
 #     birth_date = "2000-01-01"
 #     phone = "09123456789"
 
-#     # --- Register ---
+#     # --- Register user (setup) ---
 #     print("1) Register user...")
+#     user = register_user(username, password, birth_date, phone)
+#     user_id = user.id
+#     print(f"✓ User registered | id={user_id}")
+
+#     # --- Get profile ---
+#     print("\n2) Get user profile...")
+#     user = get_user_profile(user_id)
+#     print(f"✓ Profile loaded | username={user.username} | role={user.role.value}")
+
+#     # --- Change phone ---
+#     print("\n3) Change phone...")
+#     new_phone = "09987654321"
+#     user = change_phone(user_id, new_phone)
+#     if user.phone == new_phone:
+#         print("✓ Phone updated")
+#     else:
+#         print("✗ Phone update failed")
+
+#     # --- Change username ---
+#     print("\n4) Change username...")
+#     new_username = "user_service_test_new"
+#     user = change_username(user_id, new_username)
+#     if user.username == new_username:
+#         print("✓ Username updated")
+#     else:
+#         print("✗ Username update failed")
+
+#     # --- Duplicate username test ---
+#     print("\n5) Duplicate username check...")
 #     try:
-#         user = register_user(username, password, birth_date, phone)
-#         print(f"✓ Registered successfully | id={user.id}")
+#         change_username(user_id, new_username)
+#         print("✓ Same username allowed (no change needed)")
 #     except UsernameAlreadyExistsError:
-#         print("! User already exists (OK if you ran before)")
+#         print("✗ Duplicate username incorrectly blocked")
 
-#     # --- Duplicate Register ---
-#     print("\n2) Register duplicate user...")
+#     # --- Change password (success) ---
+#     print("\n6) Change password (correct flow)...")
+#     new_password = "NewStrongPass123"
+#     user = change_password(
+#         user_id,
+#         current_password=password,
+#         new_password=new_password,
+#         confirm_password=new_password
+#     )
+#     print("✓ Password changed successfully")
+
+#     # --- Wrong current password ---
+#     print("\n7) Change password with wrong current password...")
 #     try:
-#         register_user(username, password, birth_date, phone)
-#         print("✗ ERROR: Duplicate registration allowed!")
-#     except UsernameAlreadyExistsError:
-#         print("✓ Duplicate registration blocked")
+#         change_password(
+#             user_id,
+#             current_password="WrongPass",
+#             new_password="AnotherPass123",
+#             confirm_password="AnotherPass123"
+#         )
+#         print("✗ ERROR: Password changed with wrong current password!")
+#     except WrongPasswordError:
+#         print("✓ Wrong current password rejected")
 
-#     # --- Login success ---
-#     print("\n3) Login with correct password...")
+#     # --- Password mismatch ---
+#     print("\n8) Change password mismatch...")
 #     try:
-#         user = login_user(username, password)
-#         print(f"✓ Login successful | id={user.id}")
-#     except Exception as e:
-#         print(f"✗ Login failed unexpectedly: {e}")
+#         change_password(
+#             user_id,
+#             current_password=new_password,
+#             new_password="Pass12345",
+#             confirm_password="Different123"
+#         )
+#         print("✗ ERROR: Password mismatch accepted!")
+#     except PasswordMismatchError:
+#         print("✓ Password mismatch rejected")
 
-#     # --- Login wrong password ---
-#     print("\n4) Login with wrong password...")
-#     try:
-#         login_user(username, "WrongPassword")
-#         print("✗ ERROR: Logged in with wrong password!")
-#     except InvalidCredentialsError:
-#         print("✓ Wrong password rejected")
-
-#     # --- Login non-existent user ---
-#     print("\n5) Login non-existent user...")
-#     try:
-#         login_user("ghost_user", "123")
-#         print("✗ ERROR: Non-existent user logged in!")
-#     except UserNotFoundError:
-#         print("✓ Non-existent user blocked")
-
-#     print("\n=== AUTH FLOW TEST END ===")
+#     print("\n=== USER SERVICE FLOW TEST END ===")
 
 
 # if __name__ == "__main__":
-#     run_auth_flow_test()
-
-
+#     run_user_service_flow_test()
 

@@ -16,8 +16,6 @@ from utils.exceptions import (
     WrongPasswordError,
     PasswordMismatchError
     )
-from utils.console import print_title, print_info, print_error
-
 from utils.logger import get_logger
 logger = get_logger(__name__)
 
