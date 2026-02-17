@@ -124,4 +124,22 @@ class InvalidBirthDateError(CinemaTicketError):
         else:
             message = f"The birth date '{birth_date}' is invalid. Please enter a valid past date (YYYY-MM-DD)."
         super().__init__(message, *args)
+
+class InvalidSubscriptionTypeError(CinemaTicketError):
+    """Raised when an invalid subscription type is provided."""
+    def __init__(self, subscription_type: str, *args):
+        self.subscription_type = subscription_type
+        message = f"Invalid subscription type: '{subscription_type}'. Valid types are: bronze, silver, gold."
+        super().__init__(message, *args)
+
+class InvalidDateError(CinemaTicketError):
+    """Raised when a provided date is invalid or in the wrong format."""
+    def __init__(self, date_str: str, reason: str = "", *args):
+        self.date_str = date_str
+        self.reason = reason
+        if reason:
+            message = f"The date '{date_str}' is invalid: {reason}."
+        else:
+            message = f"The date '{date_str}' is invalid. Please enter a valid date in the format YYYY-MM-DD."
+        super().__init__(message, *args)
     
