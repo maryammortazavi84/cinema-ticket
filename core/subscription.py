@@ -43,6 +43,7 @@ class Subscription:
         if datetime.strptime(self.end_date, "%Y-%m-%d") < datetime.strptime(self.start_date, "%Y-%m-%d"):
             raise InvalidDateError(end_date, "end_date cannot be before start_date")
         self.remaining_credits = 3 if subscription_type == SubscriptionType.SILVER else 0
+        self.apply_gold_drink_benefits = 1 if subscription_type == SubscriptionType.GOLD else 0
 
     
     # READ-ONLY PROPERTIES
@@ -100,11 +101,20 @@ class Subscription:
     
     
     def is_active(self) -> bool:
-        """Check if the subscription is currently active based on the current date."""
-        today = datetime.today().date()
-        start = datetime.strptime(self.start_date, "%Y-%m-%d").date()
-        end = datetime.strptime(self.end_date, "%Y-%m-%d").date()
-        return start <= today <= end
+        """Check if the subscription is currently active."""
+        if self.subscription_type == SubscriptionType.GOLD:
+            if not self.end_date:
+                return False
+            else:
+                today = datetime.today().date()
+                start = datetime.strptime(self.start_date, "%Y-%m-%d").date()
+                end = datetime.strptime(self.end_date, "%Y-%m-%d").date()
+                return start <= today <= end
+        elif self.subscription_type == SubscriptionType.SILVER:
+            return self.remaining_credits > 0
+        else:
+            return  False
+        
     
     # SERIALIZATION 
     def to_dict(self) -> dict:
@@ -120,12 +130,14 @@ class Subscription:
     @classmethod
     def from_dict(cls, data: dict):
         """Create a Subscription object from a dictionary."""
-        return cls(
-            user_id=data["user_id"],
-            subscription_type=SubscriptionType(data["subscription_type"]),
-            start_date=data["start_date"],
-            end_date=data["end_date"]
-        )
+        subscription = cls(
+        user_id=data["user_id"],
+        subscription_type=SubscriptionType(data["subscription_type"]),
+        start_date=data["start_date"],
+        end_date=data["end_date"]
+    )
+        subscription.remaining_credits = data.get("remaining_credits", subscription.remaining_credits)
+        return subscription
     
     def __str__(self):
         return f"Subscription for user {self.user_id}: {self.subscription_type.value.capitalize()} (Active: {self.is_active()})"

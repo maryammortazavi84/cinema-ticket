@@ -19,5 +19,6 @@ SHOWTIMES_FILE = DATA_DIR/ "showtimes.json"
 TICKETS_FILE = DATA_DIR/ "tickets.json"
 MOVIES_FILE = DATA_DIR/ "movies.json"
 WALLETS_FILE = DATA_DIR/ "wallets.json"
+SUBSCRIPTIONS_FILE = DATA_DIR / "subscriptions.json"
 
 LOG_FILE = LOGS_DIR/ "cinematicket.log"

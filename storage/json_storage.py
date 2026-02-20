@@ -23,6 +23,7 @@ from storage.file_paths import (
     SHOWTIMES_FILE,
     TICKETS_FILE,
     MOVIES_FILE,
+    SUBSCRIPTIONS_FILE
 )
 from pathlib import Path
 from utils.logger import get_logger 
@@ -90,6 +91,21 @@ def load_users() -> dict:
 def save_users(users: dict) -> None:
     """Saves users dict with user_id as key"""
     return save_data(USERS_FILE, users)
+
+DEFAULT_SUBSCRIPTIONS_STRUCTURE = {
+    "by_user_id": {}
+}
+
+def load_subscriptions() -> dict:
+    data = load_data(SUBSCRIPTIONS_FILE, DEFAULT_SUBSCRIPTIONS_STRUCTURE)
+
+    if "by_user_id" not in data:
+        data["by_user_id"] = {}
+
+    return data
+
+def save_subscriptions(data: dict) -> None:
+    save_data(SUBSCRIPTIONS_FILE, data)
 
 def load_showtimes() -> list:
     return load_data(SHOWTIMES_FILE, [])
