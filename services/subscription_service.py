@@ -16,7 +16,7 @@ from core.subscription import Subscription
 from core.enums import SubscriptionType
 from core.user import User
 from storage.json_storage import load_subscriptions, save_subscriptions
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from utils.exceptions import (
     InvalidSubscriptionTypeError,
 )
@@ -95,18 +95,18 @@ def create_subscription(user_id: str, subscription_type: SubscriptionType) -> Su
         logger.error(f"Invalid subscription type: {subscription_type}")
         raise InvalidSubscriptionTypeError(subscription_type)
     
-    start_date = datetime.datetime.now(datetime.timezone.utc)
+    start_date = datetime.now(timezone.utc)
 
     if subscription_type == SubscriptionType.GOLD:
         end_date = start_date + timedelta(days=30)
     else:
-        end_date = None  # No end date for basic subscription
+        end_date = start_date
 
     subscription = Subscription(
         user_id=user_id,
         subscription_type=subscription_type,
         start_date=start_date.strftime("%Y-%m-%d"),
-        end_date=end_date.strftime("%Y-%m-%d") if end_date else None
+        end_date=end_date.strftime("%Y-%m-%d")
     )
 
     _save_user_subscription(subscription)

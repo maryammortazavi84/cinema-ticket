@@ -102,6 +102,34 @@ class AgeRestrictionError(CinemaTicketError):
             f"but your age is {user_age}."
         )
         super().__init__(message, *args)
+
+class InvalidDurationError(CinemaTicketError):
+    """Raised when the provided duration for a movie is invalid."""
+    def __init__(self, duration: int, *args):
+        self.duration = duration
+        message = f"Invalid duration: {duration}. Duration must be a positive integer representing minutes."
+        super().__init__(message, *args)
+
+class InvalidMovieTitleError(CinemaTicketError):
+    """Raised when the provided movie title is invalid."""
+    def __init__(self, title: str, *args):
+        self.title = title
+        message = f"Invalid movie title: '{title}'. Title cannot be empty and must be a string."
+        super().__init__(message, *args)
+
+class InvalidGenreError(CinemaTicketError):
+    """raised when the provided genre is invalid"""
+    def __init__(self, *args):
+        message = f"Invalid genre'. genre cannot be empty and must be a string."
+        super().__init__(message, *args)
+        
+
+class InvalidAgeRatingError(CinemaTicketError):
+    """Raised when the provided age rating is invalid."""
+    def __init__(self, age_rating: str, *args):
+        self.age_rating = age_rating
+        message = f"Invalid age rating: '{age_rating}'. Valid ratings are: G, PG, PG-13, R, NC-17."
+        super().__init__(message, *args)
     
     
 
@@ -142,4 +170,6 @@ class InvalidDateError(CinemaTicketError):
         else:
             message = f"The date '{date_str}' is invalid. Please enter a valid date in the format YYYY-MM-DD."
         super().__init__(message, *args)
+
+
     

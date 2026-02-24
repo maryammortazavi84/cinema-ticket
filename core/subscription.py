@@ -124,7 +124,9 @@ class Subscription:
             "subscription_type": self.subscription_type.value,
             "start_date": self.start_date,
             "end_date": self.end_date,
-            "remaining_credits": self.remaining_credits
+            "remaining_credits": self.remaining_credits,
+            "apply_gold_drink_benefits": self.apply_gold_drink_benefits
+            
         }
     
     @classmethod
@@ -136,7 +138,15 @@ class Subscription:
         start_date=data["start_date"],
         end_date=data["end_date"]
     )
-        subscription.remaining_credits = data.get("remaining_credits", subscription.remaining_credits)
+        subscription.remaining_credits = data.get(
+        "remaining_credits",
+        subscription.remaining_credits
+    )
+
+        subscription.apply_gold_drink_benefits = data.get(
+        "apply_gold_drink_benefits",
+        subscription.apply_gold_drink_benefits
+    )
         return subscription
     
     def __str__(self):
