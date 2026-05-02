@@ -18,7 +18,7 @@ logger = get_logger(__name__)
 
 class Movie:
     def __init__(self,
-                 title: str,
+                title: str,
                 duration_minutes: int,
                 age_rating: AgeRating,
                 genre: str,

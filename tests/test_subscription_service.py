@@ -99,3 +99,4 @@ def test_gold_drink_benefit_once():
 
     assert first is True
     assert second is False
+

@@ -35,6 +35,7 @@ class InvalidUserNameError(CinemaTicketError):
     """raised when user name doesnt match the requierments"""
     def __init__(self, *args):
         message = "Username must be at least 3 characters long"
+        super().__init__(message, *args)
 
 class UserNotFoundError(CinemaTicketError):
     """Raised when a user with the given username is not found."""
@@ -115,6 +116,13 @@ class InvalidMovieTitleError(CinemaTicketError):
     def __init__(self, title: str, *args):
         self.title = title
         message = f"Invalid movie title: '{title}'. Title cannot be empty and must be a string."
+        super().__init__(message, *args)
+
+class MovieNotFoundError(CinemaTicketError):
+    """Raised when a movie with the specified title is not found."""
+    def __init__(self, title: str, *args):
+        self.title = title
+        message = f"No movie found with the title '{title}'. Please check the title and try again."
         super().__init__(message, *args)
 
 class InvalidGenreError(CinemaTicketError):

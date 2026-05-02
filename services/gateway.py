@@ -20,7 +20,7 @@ class Gateway:
 
         self.transactions = []  # List to store transaction records
 
-    def process_amount(self, amount: Decimal, user_id: str, discription: str) -> bool:
+    def process_amount(self, amount: Decimal, user_id: str, description : str) -> bool:
         """
         Process a payment amount for a given user.
 
@@ -34,11 +34,11 @@ class Gateway:
             raise InvalidAmountError(amount)
 
         
-        logger.info(f"Processing amount: {amount} for user_id: {user_id} with description: {discription}")
+        logger.info(f"Processing amount: {amount} for user_id: {user_id} with description: {description }")
         self.transactions.append({
             "user_id": user_id,
             "amount": amount,
-            "description": discription
+            "description": description
         })
 
         logger.info(f"Payment of {amount} for user_id: {user_id} processed successfully.")

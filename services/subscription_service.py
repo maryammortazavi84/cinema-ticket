@@ -95,7 +95,7 @@ def create_subscription(user_id: str, subscription_type: SubscriptionType) -> Su
         logger.error(f"Invalid subscription type: {subscription_type}")
         raise InvalidSubscriptionTypeError(subscription_type)
     
-    start_date = datetime.now(timezone.utc)
+    start_date = datetime.now()
 
     if subscription_type == SubscriptionType.GOLD:
         end_date = start_date + timedelta(days=30)
@@ -208,3 +208,4 @@ def remaining_gold_drink_benefits(user: User) -> bool:
     _save_user_subscription(sub)
     logger.info(f"Applied gold drink benefit for user {user.id}. Remaining drink benefits: {sub.apply_gold_drink_benefits}")
     return True
+start_date = datetime.now(timezone.utc)
