@@ -76,6 +76,13 @@ class SeatAlreadyReservedError(CinemaTicketError):
         message = f"The seat {seat_number} is already reserved. Please choose a different seat."
         super().__init__(message, *args)
 
+class SeatAlreadyAvailableError(CinemaTicketError):
+    """Raised when trying to release a seat that is already available."""
+    def __init__(self, seat_number:str, *args):
+        self.seat_number = seat_number
+        message = f"The seat {seat_number} is already available. No need to release it."
+        super().__init__(message, *args)
+
 class ShowtimePassedError(CinemaTicketError):
     """Raised when trying to reserve a showtime that has already passed."""
     def __init__(self, showtime_details: str, *args):
@@ -93,6 +100,25 @@ class HallFullError(CinemaTicketError):
         )
         super().__init__(message, *args)
     
+class InvalidSeatRowError(ValueError):
+    """Raised when a seat row is invalid."""
+
+    def __init__(self, value):
+        message = (
+            f"Invalid seat row: {value}. "
+            "Seat row must be a single English letter from A to Z."
+        )
+        super().__init__(message)
+
+class InvalidSeatNumberError(ValueError):
+    """Raised when a seat number is invalid."""
+
+    def __init__(self, value):
+        message = (
+            f"Invalid seat number: {value}. "
+            "Seat number must be an integer between 1 and 40."
+        )
+        super().__init__(message)
 
 class AgeRestrictionError(CinemaTicketError):
     """Raised when user's age is below the movie's age rating."""
