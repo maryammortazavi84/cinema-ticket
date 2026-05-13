@@ -120,6 +120,20 @@ class InvalidSeatNumberError(ValueError):
         )
         super().__init__(message)
 
+class InvalidSeatError(CinemaTicketError):
+    """Raised when a seat identifier is invalid."""
+    def __init__(self, seat_id: str, *args):
+        self.seat_id = seat_id
+        message = f"Invalid seat identifier: '{seat_id}'. Seat ID must be in the format 'A1', 'B5', etc."
+        super().__init__(message, *args)
+
+class InvalidUserIdError(CinemaTicketError):
+    """Raised when a user ID is invalid."""
+    def __init__(self, user_id: str, *args):
+        self.user_id = user_id
+        message = f"Invalid user ID: '{user_id}'. User ID cannot be empty and must be a string."
+        super().__init__(message, *args)
+
 class AgeRestrictionError(CinemaTicketError):
     """Raised when user's age is below the movie's age rating."""
     def __init__(self, movie_title: str, required_age: int, user_age: int, *args):
@@ -205,5 +219,24 @@ class InvalidDateError(CinemaTicketError):
             message = f"The date '{date_str}' is invalid. Please enter a valid date in the format YYYY-MM-DD."
         super().__init__(message, *args)
 
+class InvalidMovieIdError(CinemaTicketError):
+    """Raised when the provided movie ID is invalid."""
+    def __init__(self, movie_id: str, *args):
+        self.movie_id = movie_id
+        message = f"Invalid movie ID: '{movie_id}'. Movie ID cannot be empty and must be a string."
+        super().__init__(message, *args)
 
+class InvalidShowtimeError(CinemaTicketError):
+    """Raised when the provided showtime is invalid."""
+    def __init__(self, showtime, *args):
+        self.showtime = showtime
+        message = f"Invalid showtime: '{showtime}'. Showtime must be a valid datetime object."
+        super().__init__(message, *args)
+
+class InvalidHallNameError(CinemaTicketError):
+    """Raised when the provided hall name is invalid."""
+    def __init__(self, hall_name: str, *args):
+        self.hall_name = hall_name
+        message = f"Invalid hall name: '{hall_name}'. Hall name cannot be empty and must be a string."
+        super().__init__(message, *args)
     

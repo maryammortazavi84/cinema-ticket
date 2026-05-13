@@ -12,8 +12,8 @@ logger = get_logger(__name__)
 class Seat:
     def __init__(self, row: str, number: int):
         """Initialize a Seat instance."""
-        self.row = row
-        self.number = number
+        self._row = row
+        self._number = number
         self.is_available: bool = True  # By default, the seat is available
 
     #row
