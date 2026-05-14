@@ -1,0 +1,11 @@
+[
+    {
+        "ticket_id": "d46ed10d6650420489eb52d405ed8591",
+        "user_id": "user_123",
+        "showtime_id": "8cf1a60a988e43c284a7b5f50a0fe44b",
+        "seat_row": "B",
+        "seat_number": 5,
+        "price": "20.00",
+        "booked_at": "2026-05-15T00:24:15.430921"
+    }
+]

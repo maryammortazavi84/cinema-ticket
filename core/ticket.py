@@ -1,4 +1,7 @@
-""""""
+"""
+Module: ticket.py
+Description: Defines the Ticket class representing a ticket for a specific showtime and seat.
+"""
 
 from datetime import datetime
 from utils.logger import get_logger
@@ -13,14 +16,16 @@ logger = get_logger(__name__)
 
 class Ticket:
     """Represents a ticket for a specific showtime and seat."""
-    def __init__(self, 
-                 ticket_id: str,
-                 user_id: str,
-                 showtime_id: str,
-                 seat_row: str,
-                 seat_number: int,
-                 price: Decimal,
-                 booked_at: datetime):
+    def __init__(
+                self,
+                user_id: str,
+                showtime_id: str,
+                seat_row: str,
+                seat_number: int,
+                price: Decimal,
+                booked_at: datetime,
+                ticket_id: str | None = None
+                ):
         
         if not user_id:
             raise InvalidUserIdError(user_id)
