@@ -7,5 +7,59 @@
         "seat_number": 5,
         "price": "20.00",
         "booked_at": "2026-05-15T00:24:15.430921"
+    },
+    {
+        "ticket_id": "4c2e46564140447191218fc64ec3fffc",
+        "user_id": "943624fc610847bd9df89c0a6f019e28",
+        "showtime_id": "9a97080135174116a813137d0590e0ff",
+        "seat_row": "C",
+        "seat_number": 10,
+        "price": "10.00",
+        "booked_at": "2026-05-17T22:12:07.346365"
+    },
+    {
+        "ticket_id": "2c16119f7b9c42499c1c52c8ce533742",
+        "user_id": "943624fc610847bd9df89c0a6f019e28",
+        "showtime_id": "ba8a5fa63bba4eccb72d050778aa506e",
+        "seat_row": "A",
+        "seat_number": 1,
+        "price": "10.00",
+        "booked_at": "2026-05-18T17:28:25.879192"
+    },
+    {
+        "ticket_id": "9c778eb725b447b4be7e55de5040c3b0",
+        "user_id": "943624fc610847bd9df89c0a6f019e28",
+        "showtime_id": "ba8a5fa63bba4eccb72d050778aa506e",
+        "seat_row": "A",
+        "seat_number": 3,
+        "price": "10.00",
+        "booked_at": "2026-05-18T17:28:53.661378"
+    },
+    {
+        "ticket_id": "d30951a2eff7452cbf1454937f5c940f",
+        "user_id": "1fabde47e5104ab3ba34ecee9a2645f3",
+        "showtime_id": "9a97080135174116a813137d0590e0ff",
+        "seat_row": "A",
+        "seat_number": 1,
+        "price": "10.00",
+        "booked_at": "2026-05-18T22:15:56.252363"
+    },
+    {
+        "ticket_id": "eedf0c3bf093457b9847517652a66c2d",
+        "user_id": "1fabde47e5104ab3ba34ecee9a2645f3",
+        "showtime_id": "ba8a5fa63bba4eccb72d050778aa506e",
+        "seat_row": "A",
+        "seat_number": 4,
+        "price": "10.00",
+        "booked_at": "2026-05-18T22:21:10.473281"
+    },
+    {
+        "ticket_id": "fa5a6d2902ab4bd0acdb082952bc8a5a",
+        "user_id": "72c6ba1a8ed540d48e7ed25613269535",
+        "showtime_id": "d88a446fb9ac48c98222ab9cf4af2bea",
+        "seat_row": "A",
+        "seat_number": 1,
+        "price": "5.000",
+        "booked_at": "2026-05-18T22:24:36.755245"
     }
 ]

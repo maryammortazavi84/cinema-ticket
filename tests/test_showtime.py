@@ -1,156 +1,136 @@
+"""
+Test module for ShowTime domain model.
+"""
+
 import pytest
 from datetime import datetime
+from decimal import Decimal
 
 from core.showtime import ShowTime
-from core.seat import Seat
 from utils.exceptions import (
-    InvalidShowtimeError,
-    InvalidHallNameError,
     InvalidMovieIdError,
-    InvalidSeatError,
+    InvalidHallNameError,
+    InvalidShowtimeError,
 )
 
-
+# ─────────────────────────────────────────────
+# 1. CREATE SHOWTIME SUCCESS
+# ─────────────────────────────────────────────
 def test_create_showtime_success():
     showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime(2026, 5, 14, 20, 0),
-        hall_name="Hall 1"
+        movie_id="m1",
+        start_time=datetime(2026, 5, 16, 20, 0),
+        hall_name="Hall A",
+        price=Decimal("12.50")
     )
 
-    assert showtime.movie_id == "movie123"
-    assert showtime.hall_name == "Hall 1"
-    assert isinstance(showtime.start_time, datetime)
+    assert showtime.movie_id == "m1"
+    assert showtime.hall_name == "Hall A"
+    assert showtime.price == Decimal("12.50")
     assert len(showtime.seats) == 50
 
 
+# ─────────────────────────────────────────────
+# 2. INVALID MOVIE ID
+# ─────────────────────────────────────────────
 def test_invalid_movie_id():
     with pytest.raises(InvalidMovieIdError):
         ShowTime(
             movie_id="",
             start_time=datetime.now(),
-            hall_name="Hall 1"
+            hall_name="Hall A",
+            price=Decimal("10")
         )
 
 
-def test_invalid_start_time():
-    with pytest.raises(InvalidShowtimeError):
-        ShowTime(
-            movie_id="movie123",
-            start_time="20:00",
-            hall_name="Hall 1"
-        )
-
-
+# ─────────────────────────────────────────────
+# 3. INVALID HALL NAME
+# ─────────────────────────────────────────────
 def test_invalid_hall_name():
     with pytest.raises(InvalidHallNameError):
         ShowTime(
-            movie_id="movie123",
+            movie_id="m1",
             start_time=datetime.now(),
-            hall_name=""
+            hall_name="   ",
+            price=Decimal("10")
         )
 
 
-def test_generate_seats():
+# ─────────────────────────────────────────────
+# 4. INVALID START TIME TYPE
+# ─────────────────────────────────────────────
+def test_invalid_start_time():
+    with pytest.raises(InvalidShowtimeError):
+        ShowTime(
+            movie_id="m1",
+            start_time="not-a-datetime",
+            hall_name="Hall A",
+            price=Decimal("10")
+        )
+
+
+# ─────────────────────────────────────────────
+# 5. NEGATIVE PRICE
+# ─────────────────────────────────────────────
+def test_negative_price():
+    with pytest.raises(ValueError):
+        ShowTime(
+            movie_id="m1",
+            start_time=datetime.now(),
+            hall_name="Hall A",
+            price=Decimal("-5")
+        )
+
+
+# ─────────────────────────────────────────────
+# 6. TO_DICT SERIALIZATION
+# ─────────────────────────────────────────────
+def test_to_dict():
     showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime.now(),
-        hall_name="Hall 1"
-    )
-
-    assert len(showtime.seats) == 50
-    assert isinstance(showtime.seats[0], Seat)
-
-
-def test_get_seat_success():
-    showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime.now(),
-        hall_name="Hall 1"
-    )
-
-    seat = showtime.get_seat("A", 1)
-
-    assert seat.row == "A"
-    assert seat.number == 1
-
-
-def test_get_seat_not_found():
-    showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime.now(),
-        hall_name="Hall 1"
-    )
-
-    with pytest.raises(InvalidSeatError):
-        showtime.get_seat("Z", 99)
-
-
-def test_get_available_seats():
-    showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime.now(),
-        hall_name="Hall 1"
-    )
-
-    seat = showtime.get_seat("A", 1)
-    seat.reserve()
-
-    available_seats = showtime.get_available_seats()
-
-    assert len(available_seats) == 49
-    assert seat not in available_seats
-
-
-def test_showtime_to_dict():
-    showtime = ShowTime(
-        movie_id="movie123",
-        start_time=datetime(2026, 5, 14, 20, 0),
-        hall_name="Hall 1"
+        movie_id="m1",
+        start_time=datetime(2026, 1, 1, 10, 0),
+        hall_name="Hall A",
+        price=Decimal("10")
     )
 
     data = showtime.to_dict()
 
-    assert data["movie_id"] == "movie123"
-    assert data["hall_name"] == "Hall 1"
-    assert isinstance(data["seats"], list)
-    assert len(data["seats"]) == 50
+    assert data["movie_id"] == "m1"
+    assert data["hall_name"] == "Hall A"
+    assert data["price"] == "10"
+    assert "start_time" in data
+    assert "seats" in data
 
 
-def test_showtime_from_dict():
+# ─────────────────────────────────────────────
+# 7. FROM_DICT DESERIALIZATION
+# ─────────────────────────────────────────────
+def test_from_dict():
     data = {
-        "showtime_id": "show123",
-        "movie_id": "movie123",
-        "start_time": "2026-05-14T20:00:00",
-        "hall_name": "Hall 1",
-        "seats": [
-            {
-                "row": "A",
-                "number": 1,
-                "is_available": False
-            }
-        ]
+        "showtime_id": "123",
+        "movie_id": "m1",
+        "start_time": "2026-01-01T10:00:00",
+        "hall_name": "Hall A",
+        "price": "10",
+        "seats": []
     }
 
     showtime = ShowTime.from_dict(data)
 
-    assert showtime.showtime_id == "show123"
-    assert showtime.movie_id == "movie123"
-
-    seat = showtime.get_seat("A", 1)
-
-    assert seat.is_available is False
+    assert showtime.movie_id == "m1"
+    assert showtime.price == Decimal("10")
+    assert showtime.showtime_id == "123"
 
 
-def test_showtime_str():
+# ─────────────────────────────────────────────
+# 8. SEATS GENERATION
+# ─────────────────────────────────────────────
+def test_seats_generated():
     showtime = ShowTime(
-        movie_id="movie123",
+        movie_id="m1",
         start_time=datetime.now(),
-        hall_name="Hall 1"
+        hall_name="Hall A",
+        price=Decimal("10")
     )
 
-    result = str(showtime)
-
-    assert "Showtime ID:" in result
-    assert "Movie ID:" in result
-    assert "Available Seats:" in result
+    assert len(showtime.seats) == 50

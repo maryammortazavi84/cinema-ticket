@@ -1,0 +1,28 @@
+{
+    "by_user_id": {
+        "943624fc610847bd9df89c0a6f019e28": {
+            "user_id": "943624fc610847bd9df89c0a6f019e28",
+            "subscription_type": "gold",
+            "start_date": "2026-05-18",
+            "end_date": "2026-06-17",
+            "remaining_credits": 0,
+            "apply_gold_drink_benefits": 1
+        },
+        "1fabde47e5104ab3ba34ecee9a2645f3": {
+            "user_id": "1fabde47e5104ab3ba34ecee9a2645f3",
+            "subscription_type": "silver",
+            "start_date": "2026-05-18",
+            "end_date": "2026-05-18",
+            "remaining_credits": 1,
+            "apply_gold_drink_benefits": 0
+        },
+        "72c6ba1a8ed540d48e7ed25613269535": {
+            "user_id": "72c6ba1a8ed540d48e7ed25613269535",
+            "subscription_type": "gold",
+            "start_date": "2026-05-18",
+            "end_date": "2026-06-17",
+            "remaining_credits": 0,
+            "apply_gold_drink_benefits": 1
+        }
+    }
+}

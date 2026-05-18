@@ -1,0 +1,150 @@
+{
+    "by_id": {
+        "6b045d2d1c7444ada68d40b0adcfc7a2": {
+            "id": "6b045d2d1c7444ada68d40b0adcfc7a2",
+            "username": "ali",
+            "phone": null,
+            "birth_date": "2005-05-12",
+            "salt": "d91444a5851047348eacc5dd525391b3",
+            "password_hash": "09d91e58b2821b91295f70fb8f582e93e4fdb277a0a8e6059a83580ea372de7f",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:37:51.879636",
+            "role": "user"
+        },
+        "b05c535061484ed7a8e061ae2ccfb1ad": {
+            "id": "b05c535061484ed7a8e061ae2ccfb1ad",
+            "username": "mary",
+            "phone": null,
+            "birth_date": "2005-05-12",
+            "salt": "2822fd3eb98745f8bc85bf2757e6e307",
+            "password_hash": "04b29e4f23f0a05cae032f7967f8a8c2f44c72bf68241cbba521303621aa199f",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:39:11.429153",
+            "role": "user"
+        },
+        "68fe8197ec7044998a1b5780674c8e88": {
+            "id": "68fe8197ec7044998a1b5780674c8e88",
+            "username": "@@@",
+            "phone": null,
+            "birth_date": "2005-05-12",
+            "salt": "69456046fd734470b3e46c5cf117fcd0",
+            "password_hash": "7b04414c3e05759e4c45ecb8ff5697c3951d704188b61dbaad40b4b008071438",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:40:04.521697",
+            "role": "user"
+        },
+        "d69865f78a9a46e5b3f0b4effe829904": {
+            "id": "d69865f78a9a46e5b3f0b4effe829904",
+            "username": "ali_dev",
+            "phone": "09123456789",
+            "birth_date": "2005-05-12",
+            "salt": "3235d91e620f46868061d51d996d76a9",
+            "password_hash": "afe618f6a89601b67c38681120464c6e0e4e9b6ddfd94de1fe1b3c2a6f547cf0",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:49:20.561298",
+            "role": "user"
+        },
+        "26f79f6f3d0d4addbacb0dcf409b51bf": {
+            "id": "26f79f6f3d0d4addbacb0dcf409b51bf",
+            "username": "sara_k",
+            "phone": "09351234567",
+            "birth_date": "2020-11-03",
+            "salt": "9b0875ce92224af5a321f5e77b4ff9c4",
+            "password_hash": "9f15ad9ced263333f2069b7b881d8f7a607f38a7a4cb13fd858f8d8386bfe8f1",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:50:32.065963",
+            "role": "user"
+        },
+        "943624fc610847bd9df89c0a6f019e28": {
+            "id": "943624fc610847bd9df89c0a6f019e28",
+            "username": "kid_user",
+            "phone": null,
+            "birth_date": "2020-01-10",
+            "salt": "dc0f1191612c457eb54f0ecba730c47b",
+            "password_hash": "669a657dc16b5e1737d78f429b5d5c17f4d3648c0a027a117f4187133b7f0cb0",
+            "wallet_balance": "70.00",
+            "created_at": "2026-05-17T21:53:01.701560",
+            "role": "user"
+        },
+        "0e822f2c79384d2eb7340b0d7af79ef1": {
+            "id": "0e822f2c79384d2eb7340b0d7af79ef1",
+            "username": "young_user",
+            "phone": null,
+            "birth_date": "2016-06-15",
+            "salt": "829fa707f1b944e1b046c349a717cce9",
+            "password_hash": "ee6cfa5efc99eec8f18dde33c591722ffb523ea1e4b3b9890d215bc9c84a98ad",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:53:41.366659",
+            "role": "user"
+        },
+        "51a31ca7285b45b7883f9e5e9f2462a0": {
+            "id": "51a31ca7285b45b7883f9e5e9f2462a0",
+            "username": "teen_user",
+            "phone": null,
+            "birth_date": "2010-09-20",
+            "salt": "a535ee0142aa4bb29064f62799e1cbfb",
+            "password_hash": "8becedd7a53c1bb81669b50a5abb8f02402e89fffdfc6338fa496377ac0e22e4",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:54:06.553279",
+            "role": "user"
+        },
+        "723a1e0d4a274dbd821aa79d7b3af312": {
+            "id": "723a1e0d4a274dbd821aa79d7b3af312",
+            "username": "adult_user",
+            "phone": null,
+            "birth_date": "2007-03-05",
+            "salt": "dfeec765635d41b3b5c82f2ac079dcd7",
+            "password_hash": "a7ad32e7668dc4786951954488a857ef70def825ee0bb2254798478fd6b201f9",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:54:35.405457",
+            "role": "user"
+        },
+        "426f8e8740294b598f095c045a13edb4": {
+            "id": "426f8e8740294b598f095c045a13edb4",
+            "username": "nc_user",
+            "phone": null,
+            "birth_date": "2005-12-01",
+            "salt": "98939e85982442bea3877ffe06d75f38",
+            "password_hash": "bf3bd2b3cf79451a69dc98d344e1aa5eb98c88913affe69adef7080ad4f95dbf",
+            "wallet_balance": "0.0",
+            "created_at": "2026-05-17T21:55:10.631298",
+            "role": "user"
+        },
+        "1fabde47e5104ab3ba34ecee9a2645f3": {
+            "id": "1fabde47e5104ab3ba34ecee9a2645f3",
+            "username": "mary84",
+            "phone": "09210491768",
+            "birth_date": "2005-05-12",
+            "salt": "b50defbbe5e642aeb0edef0444802749",
+            "password_hash": "2d20ecfc1b21f435335335bda4db519af8bb105b26094560a9f1e75f0828188d",
+            "wallet_balance": "92.000",
+            "created_at": "2026-05-18T18:37:35.193326",
+            "role": "user"
+        },
+        "72c6ba1a8ed540d48e7ed25613269535": {
+            "id": "72c6ba1a8ed540d48e7ed25613269535",
+            "username": "negin",
+            "phone": null,
+            "birth_date": "2000-02-02",
+            "salt": "64bfe53f62b440d9999cc6b0acfb51b7",
+            "password_hash": "bd25ed090c5d64962aa5110d08bd592b598513c256478edae4e45269e4bc9679",
+            "wallet_balance": "95.000",
+            "created_at": "2026-05-18T22:23:22.353583",
+            "role": "user"
+        }
+    },
+    "username_index": {
+        "ali": "6b045d2d1c7444ada68d40b0adcfc7a2",
+        "mary": "b05c535061484ed7a8e061ae2ccfb1ad",
+        "@@@": "68fe8197ec7044998a1b5780674c8e88",
+        "ali_dev": "d69865f78a9a46e5b3f0b4effe829904",
+        "sara_k": "26f79f6f3d0d4addbacb0dcf409b51bf",
+        "kid_user": "943624fc610847bd9df89c0a6f019e28",
+        "young_user": "0e822f2c79384d2eb7340b0d7af79ef1",
+        "teen_user": "51a31ca7285b45b7883f9e5e9f2462a0",
+        "adult_user": "723a1e0d4a274dbd821aa79d7b3af312",
+        "nc_user": "426f8e8740294b598f095c045a13edb4",
+        "negin": "72c6ba1a8ed540d48e7ed25613269535",
+        "mary84": "1fabde47e5104ab3ba34ecee9a2645f3"
+    }
+}

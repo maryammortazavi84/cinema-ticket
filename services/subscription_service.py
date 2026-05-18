@@ -68,7 +68,7 @@ def get_user_subscription(user_id: str) -> Subscription | None:
     """
     sub =  _load_user_subscriptions(user_id)
     if sub is None:
-        logger.info(f"User {user_id} does not have an active subscription.")
+        logger.info(f"User {user_id} has an active subscription: {SubscriptionType.BRONZE}.")
         return None
     
     if not sub.is_active():

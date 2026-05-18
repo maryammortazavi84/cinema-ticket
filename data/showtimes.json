@@ -1,0 +1,1038 @@
+[
+    {
+        "showtime_id": "9a97080135174116a813137d0590e0ff",
+        "movie_id": "86da841f506e48c382b43aa812532259",
+        "start_time": "2026-06-01T18:30:00",
+        "hall_name": "hall b",
+        "seats": [
+            {
+                "row": "A",
+                "number": 1,
+                "is_available": false
+            },
+            {
+                "row": "A",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 10,
+                "is_available": false
+            },
+            {
+                "row": "D",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 10,
+                "is_available": true
+            }
+        ],
+        "price": "10.00"
+    },
+    {
+        "showtime_id": "ba8a5fa63bba4eccb72d050778aa506e",
+        "movie_id": "2c294d51d25d41ad856c521e5fe5a7c5",
+        "start_time": "2026-06-01T18:20:00",
+        "hall_name": "hall b",
+        "seats": [
+            {
+                "row": "A",
+                "number": 1,
+                "is_available": false
+            },
+            {
+                "row": "A",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 3,
+                "is_available": false
+            },
+            {
+                "row": "A",
+                "number": 4,
+                "is_available": false
+            },
+            {
+                "row": "A",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 10,
+                "is_available": true
+            }
+        ],
+        "price": "10.00"
+    },
+    {
+        "showtime_id": "d88a446fb9ac48c98222ab9cf4af2bea",
+        "movie_id": "2262ae7ac1054ad9918d6ea0ba69003f",
+        "start_time": "2026-06-01T18:20:00",
+        "hall_name": "hall b",
+        "seats": [
+            {
+                "row": "A",
+                "number": 1,
+                "is_available": false
+            },
+            {
+                "row": "A",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 10,
+                "is_available": true
+            }
+        ],
+        "price": "10.00"
+    },
+    {
+        "showtime_id": "8613e99c1c0d4eca8c7bb03d49164708",
+        "movie_id": "536ace596c0a40f1b26004b885b22627",
+        "start_time": "2026-06-01T18:30:00",
+        "hall_name": "hall a",
+        "seats": [
+            {
+                "row": "A",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "A",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "B",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "C",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "D",
+                "number": 10,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 1,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 2,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 3,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 4,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 5,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 6,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 7,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 8,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 9,
+                "is_available": true
+            },
+            {
+                "row": "E",
+                "number": 10,
+                "is_available": true
+            }
+        ],
+        "price": "10.00"
+    }
+]

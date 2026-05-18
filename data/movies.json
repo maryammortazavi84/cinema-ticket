@@ -1,0 +1,44 @@
+[
+    {
+        "movie_id": "86da841f506e48c382b43aa812532259",
+        "title": "The Dark Knight",
+        "duration_minutes": 152,
+        "age_rating": "13",
+        "genre": "Action"
+    },
+    {
+        "movie_id": "2c294d51d25d41ad856c521e5fe5a7c5",
+        "title": "Toy Story",
+        "duration_minutes": 81,
+        "age_rating": "0",
+        "genre": "Animation"
+    },
+    {
+        "movie_id": "2262ae7ac1054ad9918d6ea0ba69003f",
+        "title": "Joker",
+        "duration_minutes": 122,
+        "age_rating": "17",
+        "genre": "Thriller"
+    },
+    {
+        "movie_id": "505d35e73d754171a092d31d308d7203",
+        "title": "Finding Nemo",
+        "duration_minutes": 100,
+        "age_rating": "7",
+        "genre": "Animation"
+    },
+    {
+        "movie_id": "65d481e5fa4c420a9baf6b452b59a042",
+        "title": "Deadpool",
+        "duration_minutes": 108,
+        "age_rating": "17",
+        "genre": "Comedy"
+    },
+    {
+        "movie_id": "dacc91fe446c49008d709130d45d3a04",
+        "title": "The Godfather",
+        "duration_minutes": 175,
+        "age_rating": "17",
+        "genre": "Crime"
+    }
+]

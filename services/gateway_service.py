@@ -6,7 +6,7 @@ a payment gateway. It serves as an intermediary between the application and the 
 
 from utils.logger import get_logger
 from decimal import Decimal
-from gateway import Gateway
+from services.gateway import Gateway
 from core.user import User
 
 logger = get_logger(__name__)
@@ -35,7 +35,7 @@ class Gateway_service:
         Raises:
             InvalidAmountError: If the amount is invalid.
         """ 
-        
+        user.deposit(amount)
         result = self.gateway.process_amount(amount, user.id, description)
         if result:           
             logger.info(f"Deposit of {amount} for user_id: {user.id} .")
@@ -56,8 +56,8 @@ class Gateway_service:
         Raises:
             InvalidAmountError: If the amount is invalid.
         """
-        
-        result = self.gateway.process_amount(-amount, user.id, description)
+        user.withdraw(amount)
+        result = self.gateway.process_amount(amount, user.id, description)
         if result:
             logger.info(f"Withdrawal of {amount} for user_id: {user.id}.")
         else:

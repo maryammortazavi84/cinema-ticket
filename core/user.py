@@ -169,21 +169,31 @@ class User:
     @property
     def wallet_balance(self) -> Decimal:
         return self._wallet_balance
+    
+    @wallet_balance.setter
+    def wallet_balance(self, value: Decimal) -> None:
+        self._set_initial_balance(value)
+    
 
     def _set_initial_balance(self, value: Decimal) -> None:
-        value = Decimal(str(value))  # ⭐
+        try:
+            value = Decimal(str(value))
+        except Exception:
+            raise InvalidAmountError(value)
+
         if value < 0:
             raise InvalidAmountError(value)
+
         self._wallet_balance = value
 
     def deposit(self, amount: Decimal) -> None:
-        amount = Decimal(str(amount))  # ⭐
+        amount = Decimal(str(amount))  
         if amount <= 0:
             raise InvalidAmountError(amount)
         self._wallet_balance += amount
 
     def withdraw(self, amount: Decimal) -> None:
-        amount = Decimal(str(amount))  # ⭐
+        amount = Decimal(str(amount))  
         if amount <= 0:
             raise InvalidAmountError(amount)
         if amount > self._wallet_balance:

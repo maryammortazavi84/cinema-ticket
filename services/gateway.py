@@ -29,7 +29,7 @@ class Gateway:
             user_id: The ID of the user making the payment.
         """
 
-        if amount <= 0:
+        if amount == 0:
             logger.error(f"Invalid amount: {amount} for user_id: {user_id}")
             raise InvalidAmountError(amount)
 

@@ -1,0 +1,732 @@
+2026-05-17 20:12:12 - WARNING - __main__ - admin_login:25 - Failed admin login attempt.
+2026-05-17 20:12:26 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:16:43 - ERROR - admin_script - add_movie_flow:86 - Invalid age rating input: PG-13
+NoneType: None
+2026-05-17 20:22:15 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:23:12 - WARNING - __main__ - admin_login:26 - Failed admin login attempt.
+2026-05-17 20:23:25 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:24:05 - ERROR - admin_script - add_movie_flow:87 - Invalid age rating input: PG-13
+NoneType: None
+2026-05-17 20:26:47 - ERROR - admin_script - add_movie_flow:87 - Invalid age rating input: PG-13
+NoneType: None
+2026-05-17 20:31:51 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:32:41 - ERROR - admin_script - add_movie_flow:92 - Invalid age rating input: PG-13
+2026-05-17 20:34:44 - ERROR - admin_script - add_movie_flow:92 - Invalid age rating input: PG13
+2026-05-17 20:35:05 - WARNING - __main__ - admin_login:26 - Failed admin login attempt.
+2026-05-17 20:35:14 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:35:48 - ERROR - admin_script - add_movie_flow:92 - Invalid age rating input: PG13
+2026-05-17 20:37:33 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:39:26 - WARNING - __main__ - admin_login:26 - Failed admin login attempt.
+2026-05-17 20:39:37 - WARNING - __main__ - admin_login:26 - Failed admin login attempt.
+2026-05-17 20:39:48 - INFO - __main__ - admin_login:21 - Admin logged in successfully.
+2026-05-17 20:40:11 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json. Returning default.
+2026-05-17 20:40:11 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:40:11 - INFO - services.admin_service - add_movie:26 - Added movie: Interstellar
+2026-05-17 20:40:11 - INFO - admin_script - add_movie_flow:106 - Movie added: Interstellar
+2026-05-17 20:44:47 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:44:47 - INFO - services.admin_service - add_movie:26 - Added movie: The Dark Knight
+2026-05-17 20:44:47 - INFO - admin_script - add_movie_flow:106 - Movie added: The Dark Knight
+2026-05-17 20:45:12 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:45:12 - INFO - services.admin_service - add_movie:26 - Added movie: Toy Story
+2026-05-17 20:45:12 - INFO - admin_script - add_movie_flow:106 - Movie added: Toy Story
+2026-05-17 20:45:39 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:45:39 - INFO - services.admin_service - add_movie:26 - Added movie: Joker
+2026-05-17 20:45:39 - INFO - admin_script - add_movie_flow:106 - Movie added: Joker
+2026-05-17 20:46:13 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:46:13 - INFO - services.admin_service - add_movie:26 - Added movie: Finding Nemo
+2026-05-17 20:46:13 - INFO - admin_script - add_movie_flow:106 - Movie added: Finding Nemo
+2026-05-17 20:46:39 - ERROR - admin_script - add_movie_flow:82 - Invalid duration input: -12
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\admin_script.py", line 79, in add_movie_flow
+    raise ValueError()
+ValueError
+2026-05-17 20:47:06 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:47:06 - INFO - services.admin_service - add_movie:26 - Added movie: Deadpool
+2026-05-17 20:47:06 - INFO - admin_script - add_movie_flow:106 - Movie added: Deadpool
+2026-05-17 20:47:38 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 20:47:38 - INFO - services.admin_service - add_movie:26 - Added movie: The Godfather
+2026-05-17 20:47:38 - INFO - admin_script - add_movie_flow:106 - Movie added: The Godfather
+2026-05-17 20:51:46 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json. Returning default.
+2026-05-17 20:51:46 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 20:51:46 - INFO - services.admin_service - add_showtime:53 - Added showtime: b6c3f1f9e58c4ba6a37a5c807878581b
+2026-05-17 20:51:46 - INFO - admin_script - add_showtime_flow:194 - Showtime added for movie ID: 536ace596c0a40f1b26004b885b22627
+2026-05-17 20:52:29 - ERROR - admin_script - add_showtime_flow:177 - Invalid datetime input: 2026/02/22 12:20
+2026-05-17 20:53:16 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 20:53:16 - INFO - services.admin_service - add_showtime:53 - Added showtime: 9a97080135174116a813137d0590e0ff
+2026-05-17 20:53:16 - INFO - admin_script - add_showtime_flow:194 - Showtime added for movie ID: 86da841f506e48c382b43aa812532259
+2026-05-17 20:53:46 - ERROR - admin_script - add_showtime_flow:177 - Invalid datetime input: 2026-06-01 18:90
+2026-05-17 20:54:19 - ERROR - admin_script - add_showtime_flow:177 - Invalid datetime input: 2026-06-01
+2026-05-17 20:54:43 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 20:54:43 - INFO - services.admin_service - add_showtime:53 - Added showtime: ba8a5fa63bba4eccb72d050778aa506e
+2026-05-17 20:54:43 - INFO - admin_script - add_showtime_flow:194 - Showtime added for movie ID: 2c294d51d25d41ad856c521e5fe5a7c5
+2026-05-17 20:56:51 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 20:56:51 - INFO - services.admin_service - add_showtime:53 - Added showtime: d88a446fb9ac48c98222ab9cf4af2bea
+2026-05-17 20:56:51 - INFO - admin_script - add_showtime_flow:194 - Showtime added for movie ID: 2262ae7ac1054ad9918d6ea0ba69003f
+2026-05-17 20:57:20 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 20:57:20 - INFO - services.admin_service - add_showtime:53 - Added showtime: 8613e99c1c0d4eca8c7bb03d49164708
+2026-05-17 20:57:20 - INFO - admin_script - add_showtime_flow:194 - Showtime added for movie ID: 536ace596c0a40f1b26004b885b22627
+2026-05-17 21:11:19 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 21:11:19 - INFO - services.admin_service - delete_showtime:66 - Deleted showtime with ID: b6c3f1f9e58c4ba6a37a5c807878581b
+2026-05-17 21:11:19 - INFO - admin_script - delete_showtime_flow:230 - Showtime deleted: b6c3f1f9e58c4ba6a37a5c807878581b
+2026-05-17 21:12:31 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\movies.json saved successfully
+2026-05-17 21:12:31 - INFO - services.admin_service - delete_movie:39 - Deleted movie with ID: 536ace596c0a40f1b26004b885b22627
+2026-05-17 21:12:31 - INFO - admin_script - delete_movie_flow:139 - Movie deleted: 536ace596c0a40f1b26004b885b22627
+2026-05-17 21:29:10 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\users.json. Returning default.
+2026-05-17 21:29:10 - ERROR - services.auth_service - register_user:63 - User creation failed for 'ali': Password must be at least 8 characters.
+2026-05-17 21:29:10 - ERROR - user_script - register_flow:84 - Error registering user: Password must be at least 8 characters.
+Traceback (most recent call last):
+  File "c:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 80, in register_flow
+    register_user(username, password, birth_date, phone)
+  File "c:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 56, in register_user
+    user = User(
+           ^^^^^
+  File "c:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 74, in __init__
+    self.set_password(password)
+  File "c:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 197, in set_password
+    raise InvalidPasswordError("Password must be at least 8 characters.")
+utils.exceptions.InvalidPasswordError: Password must be at least 8 characters.
+2026-05-17 21:37:00 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\users.json. Returning default.
+2026-05-17 21:37:00 - ERROR - services.auth_service - register_user:63 - User creation failed for 'ali': Password must contain an uppercase letter.
+2026-05-17 21:37:00 - ERROR - user_script - register_flow:86 - Error registering user: Password must contain an uppercase letter.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 81, in register_flow
+    register_user(username, password, birth_date, phone)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 56, in register_user
+    user = User(
+           ^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 74, in __init__
+    self.set_password(password)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 200, in set_password
+    raise InvalidPasswordError("Password must contain an uppercase letter.")
+utils.exceptions.InvalidPasswordError: Password must contain an uppercase letter.
+2026-05-17 21:37:51 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\users.json. Returning default.
+2026-05-17 21:37:52 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:37:52 - INFO - services.auth_service - register_user:72 - User registered: ali
+2026-05-17 21:37:52 - INFO - user_script - register_flow:82 - User registered: ali
+2026-05-17 21:38:32 - WARNING - services.auth_service - register_user:50 - Registration failed: username 'ali' exists
+2026-05-17 21:38:32 - ERROR - user_script - register_flow:86 - Error registering user: Username 'ali' already exists.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 81, in register_flow
+    register_user(username, password, birth_date, phone)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 51, in register_user
+    raise UsernameAlreadyExistsError(username)
+utils.exceptions.UsernameAlreadyExistsError: Username 'ali' already exists.
+2026-05-17 21:39:11 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:39:11 - INFO - services.auth_service - register_user:72 - User registered: mary
+2026-05-17 21:39:11 - INFO - user_script - register_flow:82 - User registered: mary
+2026-05-17 21:40:04 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:40:04 - INFO - services.auth_service - register_user:72 - User registered: @@@
+2026-05-17 21:40:04 - INFO - user_script - register_flow:82 - User registered: @@@
+2026-05-17 21:49:20 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:49:20 - INFO - services.auth_service - register_user:72 - User registered: ali_dev
+2026-05-17 21:49:20 - INFO - user_script - register_flow:82 - User registered: ali_dev
+2026-05-17 21:50:32 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:50:32 - INFO - services.auth_service - register_user:72 - User registered: sara_k
+2026-05-17 21:50:32 - INFO - user_script - register_flow:82 - User registered: sara_k
+2026-05-17 21:53:01 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:53:01 - INFO - services.auth_service - register_user:72 - User registered: kid_user
+2026-05-17 21:53:01 - INFO - user_script - register_flow:82 - User registered: kid_user
+2026-05-17 21:53:41 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:53:41 - INFO - services.auth_service - register_user:72 - User registered: young_user
+2026-05-17 21:53:41 - INFO - user_script - register_flow:82 - User registered: young_user
+2026-05-17 21:54:06 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:54:06 - INFO - services.auth_service - register_user:72 - User registered: teen_user
+2026-05-17 21:54:06 - INFO - user_script - register_flow:82 - User registered: teen_user
+2026-05-17 21:54:35 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:54:35 - INFO - services.auth_service - register_user:72 - User registered: adult_user
+2026-05-17 21:54:35 - INFO - user_script - register_flow:82 - User registered: adult_user
+2026-05-17 21:55:10 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 21:55:10 - INFO - services.auth_service - register_user:72 - User registered: nc_user
+2026-05-17 21:55:10 - INFO - user_script - register_flow:82 - User registered: nc_user
+2026-05-17 21:56:27 - INFO - services.auth_service - login_user:118 - User logged in successfully: ali_dev (id=d69865f78a9a46e5b3f0b4effe829904)
+2026-05-17 21:56:27 - INFO - user_script - login_flow:100 - User logged in: ali_dev
+2026-05-17 21:57:08 - WARNING - services.auth_service - login_user:97 - Login failed: username 'ali-dev' not found
+2026-05-17 21:57:08 - ERROR - user_script - login_flow:105 - Error logging in: ('No user found with that user name or id. Please check and try again.', 'ali-dev')
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 98, in login_user
+    raise UserNotFoundError(username)
+utils.exceptions.UserNotFoundError: ('No user found with that user name or id. Please check and try again.', 'ali-dev')
+2026-05-17 21:58:54 - INFO - services.auth_service - login_user:118 - User logged in successfully: nc_user (id=426f8e8740294b598f095c045a13edb4)
+2026-05-17 21:58:54 - INFO - user_script - login_flow:100 - User logged in: nc_user
+2026-05-17 22:01:24 - INFO - services.auth_service - login_user:118 - User logged in successfully: nc_user (id=426f8e8740294b598f095c045a13edb4)
+2026-05-17 22:01:24 - INFO - user_script - login_flow:100 - User logged in: nc_user
+2026-05-17 22:07:57 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-17 22:07:57 - INFO - user_script - login_flow:100 - User logged in: kid_user
+2026-05-17 22:08:19 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-17 22:08:19 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-17 22:08:19 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-17 22:08:19 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-17 22:08:22 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-17 22:08:22 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-17 22:08:22 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Ticket for The Dark Knight at 2026-06-01T18:30:00
+2026-05-17 22:08:22 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-17 22:08:22 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28.
+2026-05-17 22:11:36 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-17 22:11:36 - INFO - user_script - login_flow:100 - User logged in: kid_user
+2026-05-17 22:12:05 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-17 22:12:05 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-17 22:12:05 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-17 22:12:05 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-17 22:12:07 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-17 22:12:07 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-17 22:12:07 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Ticket for The Dark Knight at 2026-06-01T18:30:00
+2026-05-17 22:12:07 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-17 22:12:07 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28.
+2026-05-17 22:12:07 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-17 22:12:07 - INFO - core.seat - reserve:56 - Seat C10 has been reserved.
+2026-05-17 22:12:07 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-17 22:12:07 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'C10' reserved for showtime_id='9a97080135174116a813137d0590e0ff'
+2026-05-17 22:12:07 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-17 22:12:07 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='9a97080135174116a813137d0590e0ff', seat='C10'
+2026-05-17 22:12:07 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='9a97080135174116a813137d0590e0ff', seat='C10'
+2026-05-17 22:12:07 - INFO - user_script - reserve_ticket_flow:254 - Ticket reserved for user_id: 943624fc610847bd9df89c0a6f019e28, showtime_id: 9a97080135174116a813137d0590e0ff, seat: C10
+2026-05-17 22:16:20 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-17 22:16:20 - ERROR - user_script - login_flow:105 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 231, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 176, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-17 22:16:35 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-17 22:16:35 - ERROR - user_script - login_flow:105 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 231, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 176, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-17 22:17:41 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-17 22:17:41 - ERROR - user_script - login_flow:105 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 231, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 176, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-17 22:21:24 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-17 22:21:24 - ERROR - user_script - login_flow:105 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 236, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 180, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-17 22:21:48 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-17 22:21:48 - INFO - user_script - login_flow:100 - User logged in: kid_user
+2026-05-17 22:22:13 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-17 22:22:13 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-17 22:22:13 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-17 22:22:13 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:14:26 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:14:26 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:14:39 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:14:39 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:14:39 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:14:39 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:16:02 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:16:02 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:16:14 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:16:14 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:16:14 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:16:14 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:20:21 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:20:21 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:20:32 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:20:32 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:20:32 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:20:32 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:21:36 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:21:36 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:21:46 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:21:46 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:21:46 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:21:46 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:23:10 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:23:10 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:27:34 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:27:34 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:27:34 - INFO - services.gateway - process_amount:37 - Processing amount: 20 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Wallet Deposit
+2026-05-18 17:27:34 - INFO - services.gateway - process_amount:44 - Payment of 20 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 17:27:34 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 20 for user_id: 943624fc610847bd9df89c0a6f019e28 .
+2026-05-18 17:28:03 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 17:28:03 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 17:28:21 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:28:21 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:28:21 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:28:21 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:28:25 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:28:25 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:28:25 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Ticket for Toy Story at 2026-06-01T18:20:00
+2026-05-18 17:28:25 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 17:28:25 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28.
+2026-05-18 17:28:25 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 17:28:25 - INFO - core.seat - reserve:56 - Seat A1 has been reserved.
+2026-05-18 17:28:25 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-18 17:28:25 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'A1' reserved for showtime_id='ba8a5fa63bba4eccb72d050778aa506e'
+2026-05-18 17:28:25 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-18 17:28:25 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A1'
+2026-05-18 17:28:25 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A1'
+2026-05-18 17:28:25 - INFO - user_script - reserve_ticket_flow:262 - Ticket reserved for user_id: 943624fc610847bd9df89c0a6f019e28, showtime_id: ba8a5fa63bba4eccb72d050778aa506e, seat: A1
+2026-05-18 17:28:52 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 17:28:52 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 17:28:52 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 17:28:52 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 17:28:53 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:28:53 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 17:28:53 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Ticket for Toy Story at 2026-06-01T18:20:00
+2026-05-18 17:28:53 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 17:28:53 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 943624fc610847bd9df89c0a6f019e28.
+2026-05-18 17:28:53 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 17:28:53 - INFO - core.seat - reserve:56 - Seat A3 has been reserved.
+2026-05-18 17:28:53 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-18 17:28:53 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'A3' reserved for showtime_id='ba8a5fa63bba4eccb72d050778aa506e'
+2026-05-18 17:28:53 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-18 17:28:53 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A3'
+2026-05-18 17:28:53 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='943624fc610847bd9df89c0a6f019e28', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A3'
+2026-05-18 17:28:53 - INFO - user_script - reserve_ticket_flow:262 - Ticket reserved for user_id: 943624fc610847bd9df89c0a6f019e28, showtime_id: ba8a5fa63bba4eccb72d050778aa506e, seat: A3
+2026-05-18 17:59:36 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-18 17:59:36 - ERROR - user_script - login_flow:107 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 241, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 185, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 101, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-18 18:00:01 - ERROR - services.auth_service - login_user:111 - Failed to load user 'kid_user': Invalid amount: -10.00. Amount must be positive.
+2026-05-18 18:00:01 - ERROR - user_script - login_flow:107 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 109, in login_user
+    user = User.from_dict(user_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 241, in from_dict
+    return cls(
+           ^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 67, in __init__
+    self._set_initial_balance(wallet_balance)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 185, in _set_initial_balance
+    raise InvalidAmountError(value)
+utils.exceptions.InvalidAmountError: Invalid amount: -10.00. Amount must be positive.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 101, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 112, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-18 18:01:39 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 18:01:39 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 18:01:51 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 18:01:51 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:01:51 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 18:01:51 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 18:01:54 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:01:54 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:01:54 - ERROR - user_script - reserve_ticket_flow:267 - Error reserving ticket: Insufficient balance. Required: 10.00 USD, Available: 0.00 USD. You need 10.00 USD more.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 251, in reserve_ticket_flow
+    gateway_service.withdraw_from_wallet(price,
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\gateway_service.py", line 59, in withdraw_from_wallet
+    user.withdraw(amount)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 200, in withdraw
+    raise InsufficientBalanceError(amount, self._wallet_balance)
+utils.exceptions.InsufficientBalanceError: Insufficient balance. Required: 10.00 USD, Available: 0.00 USD. You need 10.00 USD more.
+2026-05-18 18:04:21 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 18:04:21 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:04:21 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 18:04:21 - INFO - services.subscription_service - apply_subscription_benefits:161 - User 943624fc610847bd9df89c0a6f019e28 has bronze subscription. No benefits applied.
+2026-05-18 18:04:22 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:04:22 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:04:22 - ERROR - user_script - reserve_ticket_flow:267 - Error reserving ticket: Insufficient balance. Required: 10.00 USD, Available: 0.00 USD. You need 10.00 USD more.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 251, in reserve_ticket_flow
+    gateway_service.withdraw_from_wallet(price,
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\gateway_service.py", line 59, in withdraw_from_wallet
+    user.withdraw(amount)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 200, in withdraw
+    raise InsufficientBalanceError(amount, self._wallet_balance)
+utils.exceptions.InsufficientBalanceError: Insufficient balance. Required: 10.00 USD, Available: 0.00 USD. You need 10.00 USD more.
+2026-05-18 18:05:23 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:05:23 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:05:23 - INFO - services.gateway - process_amount:37 - Processing amount: 20 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Wallet Deposit
+2026-05-18 18:05:23 - INFO - services.gateway - process_amount:44 - Payment of 20 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 18:05:23 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 20 for user_id: 943624fc610847bd9df89c0a6f019e28 .
+2026-05-18 18:05:23 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 18:05:23 - INFO - user_script - wallet_flow:348 - Deposited $20 to wallet for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:05:41 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:05:41 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:05:41 - INFO - services.gateway - process_amount:37 - Processing amount: 10 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Wallet Deposit
+2026-05-18 18:05:41 - INFO - services.gateway - process_amount:44 - Payment of 10 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 18:05:41 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 10 for user_id: 943624fc610847bd9df89c0a6f019e28 .
+2026-05-18 18:05:41 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 18:05:41 - INFO - user_script - wallet_flow:348 - Deposited $10 to wallet for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:08:53 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 18:08:53 - INFO - user_script - login_flow:102 - User logged in: kid_user
+2026-05-18 18:09:09 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:09 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:09 - INFO - services.gateway - process_amount:37 - Processing amount: 10 for user_id: 943624fc610847bd9df89c0a6f019e28 with description: Wallet Deposit
+2026-05-18 18:09:09 - INFO - services.gateway - process_amount:44 - Payment of 10 for user_id: 943624fc610847bd9df89c0a6f019e28 processed successfully.
+2026-05-18 18:09:09 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 10 for user_id: 943624fc610847bd9df89c0a6f019e28 .
+2026-05-18 18:09:09 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 18:09:09 - INFO - user_script - wallet_flow:347 - Deposited $10 to wallet for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:09:18 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:18 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:18 - ERROR - user_script - wallet_flow:354 - Error depositing to wallet: Invalid amount: -10. Amount must be positive.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 335, in wallet_flow
+    result = gateway_service.deposit_to_wallet(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\gateway_service.py", line 38, in deposit_to_wallet
+    user.deposit(amount)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 192, in deposit
+    raise InvalidAmountError(amount)
+utils.exceptions.InvalidAmountError: Invalid amount: -10. Amount must be positive.
+2026-05-18 18:09:51 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:51 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 18:09:51 - ERROR - user_script - wallet_flow:354 - Error depositing to wallet: Invalid amount: 0. Amount must be positive.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 335, in wallet_flow
+    result = gateway_service.deposit_to_wallet(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\gateway_service.py", line 38, in deposit_to_wallet
+    user.deposit(amount)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 192, in deposit
+    raise InvalidAmountError(amount)
+utils.exceptions.InvalidAmountError: Invalid amount: 0. Amount must be positive.
+2026-05-18 18:22:29 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 18:22:29 - INFO - user_script - login_flow:100 - User logged in: kid_user
+2026-05-18 18:22:36 - ERROR - user_script - wallet_flow:367 - Error depositing to wallet: [<class 'decimal.ConversionSyntax'>]
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 331, in wallet_flow
+    amount = Decimal(amount_str)
+             ^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+2026-05-18 18:23:52 - INFO - services.auth_service - login_user:118 - User logged in successfully: kid_user (id=943624fc610847bd9df89c0a6f019e28)
+2026-05-18 18:23:52 - INFO - user_script - login_flow:100 - User logged in: kid_user
+2026-05-18 18:24:16 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 18:24:16 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 943624fc610847bd9df89c0a6f019e28
+2026-05-18 18:24:16 - INFO - services.subscription_service - get_user_subscription:71 - User 943624fc610847bd9df89c0a6f019e28 does not have an active subscription.
+2026-05-18 18:24:48 - ERROR - storage.json_storage - load_data:47 - Corrupted JSON in C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json. Returning default.
+2026-05-18 18:24:48 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 18:24:48 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 943624fc610847bd9df89c0a6f019e28 saved successfully
+2026-05-18 18:24:48 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 943624fc610847bd9df89c0a6f019e28: Subscription for user 943624fc610847bd9df89c0a6f019e28: Bronze (Active: False)
+2026-05-18 18:24:48 - INFO - user_script - create_subscription_flow:465 - Subscription created: 943624fc610847bd9df89c0a6f019e28 -> bronze
+2026-05-18 18:24:50 - INFO - services.subscription_service - get_user_subscription:75 - User 943624fc610847bd9df89c0a6f019e28 has an expired subscription.
+2026-05-18 18:24:55 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 18:24:55 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 943624fc610847bd9df89c0a6f019e28 saved successfully
+2026-05-18 18:24:55 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 943624fc610847bd9df89c0a6f019e28: Subscription for user 943624fc610847bd9df89c0a6f019e28: Silver (Active: True)
+2026-05-18 18:24:55 - INFO - user_script - create_subscription_flow:465 - Subscription created: 943624fc610847bd9df89c0a6f019e28 -> silver
+2026-05-18 18:24:59 - INFO - services.subscription_service - get_user_subscription:78 - User 943624fc610847bd9df89c0a6f019e28 has an active subscription: Subscription for user 943624fc610847bd9df89c0a6f019e28: Silver (Active: True)
+2026-05-18 18:28:49 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 18:28:49 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 943624fc610847bd9df89c0a6f019e28 saved successfully
+2026-05-18 18:28:49 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 943624fc610847bd9df89c0a6f019e28: Subscription for user 943624fc610847bd9df89c0a6f019e28: Gold (Active: True)
+2026-05-18 18:28:49 - INFO - user_script - create_subscription_flow:465 - Subscription created: 943624fc610847bd9df89c0a6f019e28 -> gold
+2026-05-18 18:28:52 - INFO - services.subscription_service - get_user_subscription:78 - User 943624fc610847bd9df89c0a6f019e28 has an active subscription: Subscription for user 943624fc610847bd9df89c0a6f019e28: Gold (Active: True)
+2026-05-18 18:34:09 - INFO - services.subscription_service - get_user_subscription:78 - User 943624fc610847bd9df89c0a6f019e28 has an active subscription: Subscription for user 943624fc610847bd9df89c0a6f019e28: Gold (Active: True)
+2026-05-18 18:36:43 - WARNING - services.auth_service - login_user:115 - Login failed: wrong password for 'young_user'
+2026-05-18 18:36:43 - ERROR - user_script - login_flow:105 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 99, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 116, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-18 18:37:09 - WARNING - services.auth_service - register_user:50 - Registration failed: username 'mary' exists
+2026-05-18 18:37:09 - ERROR - user_script - register_flow:86 - Error registering user: Username 'mary' already exists.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 81, in register_flow
+    register_user(username, password, birth_date, phone)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 51, in register_user
+    raise UsernameAlreadyExistsError(username)
+utils.exceptions.UsernameAlreadyExistsError: Username 'mary' already exists.
+2026-05-18 18:37:35 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 18:37:35 - INFO - services.auth_service - register_user:72 - User registered: maryam
+2026-05-18 18:37:35 - INFO - user_script - register_flow:82 - User registered: maryam
+2026-05-18 18:37:48 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 18:37:48 - INFO - user_script - login_flow:100 - User logged in: maryam
+2026-05-18 18:37:54 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 18:37:54 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 18:39:40 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 18:39:40 - INFO - user_script - login_flow:100 - User logged in: maryam
+2026-05-18 18:39:46 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 18:39:46 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 19:27:02 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 19:27:02 - INFO - user_script - login_flow:101 - User logged in: maryam
+2026-05-18 19:27:07 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 19:27:07 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 19:28:16 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 19:28:16 - INFO - user_script - login_flow:101 - User logged in: maryam
+2026-05-18 19:28:24 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 19:28:24 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 22:12:51 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:12:51 - INFO - user_script - login_flow:101 - User logged in: maryam
+2026-05-18 22:13:08 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:13:08 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 22:13:22 - WARNING - services.subscription_service - _load_user_subscriptions:37 - No subscription found for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:13:22 - INFO - services.subscription_service - get_user_subscription:71 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: SubscriptionType.BRONZE.
+2026-05-18 22:13:27 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 22:13:27 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3 saved successfully
+2026-05-18 22:13:27 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Gold (Active: True)
+2026-05-18 22:13:27 - INFO - user_script - create_subscription_flow:470 - Subscription created: 1fabde47e5104ab3ba34ecee9a2645f3 -> gold
+2026-05-18 22:13:37 - INFO - services.subscription_service - get_user_subscription:78 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Gold (Active: True)
+2026-05-18 22:13:42 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 22:13:42 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3 saved successfully
+2026-05-18 22:13:42 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Silver (Active: True)
+2026-05-18 22:13:42 - INFO - user_script - create_subscription_flow:470 - Subscription created: 1fabde47e5104ab3ba34ecee9a2645f3 -> silver
+2026-05-18 22:15:35 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:15:35 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:15:35 - INFO - services.gateway - process_amount:37 - Processing amount: 100 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 with description: Wallet Deposit
+2026-05-18 22:15:35 - INFO - services.gateway - process_amount:44 - Payment of 100 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 processed successfully.
+2026-05-18 22:15:35 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 100 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 .
+2026-05-18 22:15:35 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:15:35 - INFO - user_script - wallet_flow:354 - Deposited $100 to wallet for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:15:52 - INFO - services.subscription_service - get_user_subscription:78 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Silver (Active: True)
+2026-05-18 22:15:52 - INFO - services.subscription_service - apply_subscription_benefits:174 - Applied silver subscription benefits for user 1fabde47e5104ab3ba34ecee9a2645f3: original amount 10.00, cashback 2.000, final amount 8.000
+2026-05-18 22:15:52 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 22:15:52 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3 saved successfully
+2026-05-18 22:15:56 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:15:56 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:15:56 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 with description: Ticket for The Dark Knight at 2026-06-01T18:30:00
+2026-05-18 22:15:56 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 processed successfully.
+2026-05-18 22:15:56 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3.
+2026-05-18 22:15:56 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:15:56 - INFO - core.seat - reserve:56 - Seat A1 has been reserved.
+2026-05-18 22:15:56 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-18 22:15:56 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'A1' reserved for showtime_id='9a97080135174116a813137d0590e0ff'
+2026-05-18 22:15:56 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-18 22:15:56 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='1fabde47e5104ab3ba34ecee9a2645f3', showtime_id='9a97080135174116a813137d0590e0ff', seat='A1'
+2026-05-18 22:15:56 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='1fabde47e5104ab3ba34ecee9a2645f3', showtime_id='9a97080135174116a813137d0590e0ff', seat='A1'
+2026-05-18 22:15:56 - INFO - user_script - reserve_ticket_flow:261 - Ticket reserved for user_id: 1fabde47e5104ab3ba34ecee9a2645f3, showtime_id: 9a97080135174116a813137d0590e0ff, seat: A1
+2026-05-18 22:16:38 - INFO - services.subscription_service - get_user_subscription:78 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Silver (Active: True)
+2026-05-18 22:17:06 - INFO - services.subscription_service - get_user_subscription:78 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Silver (Active: True)
+2026-05-18 22:20:32 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:20:32 - INFO - user_script - login_flow:101 - User logged in: maryam
+2026-05-18 22:20:54 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:20:54 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:20:54 - INFO - services.gateway - process_amount:37 - Processing amount: 18 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 with description: Wallet Deposit
+2026-05-18 22:20:54 - INFO - services.gateway - process_amount:44 - Payment of 18 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 processed successfully.
+2026-05-18 22:20:54 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 18 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 .
+2026-05-18 22:20:54 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:20:54 - INFO - user_script - wallet_flow:354 - Deposited $18 to wallet for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:21:09 - INFO - services.subscription_service - get_user_subscription:78 - User 1fabde47e5104ab3ba34ecee9a2645f3 has an active subscription: Subscription for user 1fabde47e5104ab3ba34ecee9a2645f3: Silver (Active: True)
+2026-05-18 22:21:09 - INFO - services.subscription_service - apply_subscription_benefits:174 - Applied silver subscription benefits for user 1fabde47e5104ab3ba34ecee9a2645f3: original amount 10.00, cashback 2.000, final amount 8.000
+2026-05-18 22:21:09 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 22:21:09 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 1fabde47e5104ab3ba34ecee9a2645f3 saved successfully
+2026-05-18 22:21:10 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:21:10 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:21:10 - INFO - services.gateway - process_amount:37 - Processing amount: 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 with description: Ticket for Toy Story at 2026-06-01T18:20:00
+2026-05-18 22:21:10 - INFO - services.gateway - process_amount:44 - Payment of 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 processed successfully.
+2026-05-18 22:21:10 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 10.00 for user_id: 1fabde47e5104ab3ba34ecee9a2645f3.
+2026-05-18 22:21:10 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:21:10 - INFO - core.seat - reserve:56 - Seat A4 has been reserved.
+2026-05-18 22:21:10 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-18 22:21:10 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'A4' reserved for showtime_id='ba8a5fa63bba4eccb72d050778aa506e'
+2026-05-18 22:21:10 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-18 22:21:10 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='1fabde47e5104ab3ba34ecee9a2645f3', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A4'
+2026-05-18 22:21:10 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='1fabde47e5104ab3ba34ecee9a2645f3', showtime_id='ba8a5fa63bba4eccb72d050778aa506e', seat='A4'
+2026-05-18 22:21:10 - INFO - user_script - reserve_ticket_flow:261 - Ticket reserved for user_id: 1fabde47e5104ab3ba34ecee9a2645f3, showtime_id: ba8a5fa63bba4eccb72d050778aa506e, seat: A4
+2026-05-18 22:22:55 - ERROR - services.auth_service - register_user:63 - User creation failed for 'negin': Password must contain a lowercase letter.
+2026-05-18 22:22:55 - ERROR - user_script - register_flow:87 - Error registering user: Password must contain a lowercase letter.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 82, in register_flow
+    register_user(username, password, birth_date, phone)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 56, in register_user
+    user = User(
+           ^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 74, in __init__
+    self.set_password(password)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 213, in set_password
+    raise InvalidPasswordError("Password must contain a lowercase letter.")
+utils.exceptions.InvalidPasswordError: Password must contain a lowercase letter.
+2026-05-18 22:23:22 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:23:22 - INFO - services.auth_service - register_user:72 - User registered: negin
+2026-05-18 22:23:22 - INFO - user_script - register_flow:83 - User registered: negin
+2026-05-18 22:23:32 - INFO - services.auth_service - login_user:118 - User logged in successfully: negin (id=72c6ba1a8ed540d48e7ed25613269535)
+2026-05-18 22:23:32 - INFO - user_script - login_flow:101 - User logged in: negin
+2026-05-18 22:23:41 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\subscriptions.json saved successfully
+2026-05-18 22:23:41 - INFO - services.subscription_service - _save_user_subscription:56 - Subscription for user_id 72c6ba1a8ed540d48e7ed25613269535 saved successfully
+2026-05-18 22:23:41 - INFO - services.subscription_service - create_subscription:113 - Created new subscription for user_id 72c6ba1a8ed540d48e7ed25613269535: Subscription for user 72c6ba1a8ed540d48e7ed25613269535: Gold (Active: True)
+2026-05-18 22:23:41 - INFO - user_script - create_subscription_flow:469 - Subscription created: 72c6ba1a8ed540d48e7ed25613269535 -> gold
+2026-05-18 22:23:48 - INFO - services.subscription_service - get_user_subscription:78 - User 72c6ba1a8ed540d48e7ed25613269535 has an active subscription: Subscription for user 72c6ba1a8ed540d48e7ed25613269535: Gold (Active: True)
+2026-05-18 22:24:02 - INFO - services.subscription_service - get_user_subscription:78 - User 72c6ba1a8ed540d48e7ed25613269535 has an active subscription: Subscription for user 72c6ba1a8ed540d48e7ed25613269535: Gold (Active: True)
+2026-05-18 22:24:02 - INFO - services.subscription_service - apply_subscription_benefits:182 - Applied gold subscription benefits for user 72c6ba1a8ed540d48e7ed25613269535: original amount 10.00, discount 5.000, final amount 5.000
+2026-05-18 22:24:03 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:03 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:03 - ERROR - user_script - reserve_ticket_flow:265 - Error reserving ticket: Insufficient balance. Required: 5.00 USD, Available: 0.00 USD. You need 5.00 USD more.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 250, in reserve_ticket_flow
+    gateway_service.withdraw_from_wallet(price,
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\gateway_service.py", line 59, in withdraw_from_wallet
+    user.withdraw(amount)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 200, in withdraw
+    raise InsufficientBalanceError(amount, self._wallet_balance)
+utils.exceptions.InsufficientBalanceError: Insufficient balance. Required: 5.00 USD, Available: 0.00 USD. You need 5.00 USD more.
+2026-05-18 22:24:21 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:21 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:21 - INFO - services.gateway - process_amount:37 - Processing amount: 100 for user_id: 72c6ba1a8ed540d48e7ed25613269535 with description: Wallet Deposit
+2026-05-18 22:24:21 - INFO - services.gateway - process_amount:44 - Payment of 100 for user_id: 72c6ba1a8ed540d48e7ed25613269535 processed successfully.
+2026-05-18 22:24:21 - INFO - services.gateway_service - deposit_to_wallet:41 - Deposit of 100 for user_id: 72c6ba1a8ed540d48e7ed25613269535 .
+2026-05-18 22:24:21 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:24:21 - INFO - user_script - wallet_flow:353 - Deposited $100 to wallet for user_id: 72c6ba1a8ed540d48e7ed25613269535
+2026-05-18 22:24:35 - INFO - services.subscription_service - get_user_subscription:78 - User 72c6ba1a8ed540d48e7ed25613269535 has an active subscription: Subscription for user 72c6ba1a8ed540d48e7ed25613269535: Gold (Active: True)
+2026-05-18 22:24:35 - INFO - services.subscription_service - apply_subscription_benefits:182 - Applied gold subscription benefits for user 72c6ba1a8ed540d48e7ed25613269535: original amount 10.00, discount 5.000, final amount 5.000
+2026-05-18 22:24:36 - INFO - services.gateway - __init__:19 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:36 - INFO - services.gateway_service - __init__:23 - Gateway service initialized with ID: default_gateway
+2026-05-18 22:24:36 - INFO - services.gateway - process_amount:37 - Processing amount: 5.000 for user_id: 72c6ba1a8ed540d48e7ed25613269535 with description: Ticket for Joker at 2026-06-01T18:20:00
+2026-05-18 22:24:36 - INFO - services.gateway - process_amount:44 - Payment of 5.000 for user_id: 72c6ba1a8ed540d48e7ed25613269535 processed successfully.
+2026-05-18 22:24:36 - INFO - services.gateway_service - withdraw_from_wallet:62 - Withdrawal of 5.000 for user_id: 72c6ba1a8ed540d48e7ed25613269535.
+2026-05-18 22:24:36 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:24:36 - INFO - core.seat - reserve:56 - Seat A1 has been reserved.
+2026-05-18 22:24:36 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\showtimes.json saved successfully
+2026-05-18 22:24:36 - INFO - services.reservation_service - _reserve_seat:72 - Seat 'A1' reserved for showtime_id='d88a446fb9ac48c98222ab9cf4af2bea'
+2026-05-18 22:24:36 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\tickets.json saved successfully
+2026-05-18 22:24:36 - INFO - services.reservation_service - _create_ticket:100 - Ticket created for user_id='72c6ba1a8ed540d48e7ed25613269535', showtime_id='d88a446fb9ac48c98222ab9cf4af2bea', seat='A1'
+2026-05-18 22:24:36 - INFO - services.reservation_service - reserve_ticket:130 - Ticket reservation successful for user_id='72c6ba1a8ed540d48e7ed25613269535', showtime_id='d88a446fb9ac48c98222ab9cf4af2bea', seat='A1'
+2026-05-18 22:24:36 - INFO - user_script - reserve_ticket_flow:260 - Ticket reserved for user_id: 72c6ba1a8ed540d48e7ed25613269535, showtime_id: d88a446fb9ac48c98222ab9cf4af2bea, seat: A1
+2026-05-18 22:25:12 - INFO - services.subscription_service - get_user_subscription:78 - User 72c6ba1a8ed540d48e7ed25613269535 has an active subscription: Subscription for user 72c6ba1a8ed540d48e7ed25613269535: Gold (Active: True)
+2026-05-18 22:27:49 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:27:49 - INFO - user_script - login_flow:102 - User logged in: maryam
+2026-05-18 22:31:41 - WARNING - services.auth_service - login_user:115 - Login failed: wrong password for 'maryam'
+2026-05-18 22:31:41 - ERROR - user_script - login_flow:107 - Error logging in: Invalid username or password. Please check your credentials and try again.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 101, in login_flow
+    user = login_user(username, password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\auth_service.py", line 116, in login_user
+    raise InvalidCredentialsError()
+utils.exceptions.InvalidCredentialsError: Invalid username or password. Please check your credentials and try again.
+2026-05-18 22:31:54 - INFO - services.auth_service - login_user:118 - User logged in successfully: maryam (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:31:54 - INFO - user_script - login_flow:102 - User logged in: maryam
+2026-05-18 22:32:00 - INFO - services.user_service - get_user_profile:224 - User profile retrieved for user_id '1fabde47e5104ab3ba34ecee9a2645f3'
+2026-05-18 22:32:15 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:32:15 - INFO - services.user_service - change_username:150 - Username changed: 'maryam' → 'mary84'
+2026-05-18 22:32:15 - INFO - user_script - profile_flow:515 - Username changed for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 to mary84
+2026-05-18 22:32:18 - INFO - services.user_service - get_user_profile:224 - User profile retrieved for user_id '1fabde47e5104ab3ba34ecee9a2645f3'
+2026-05-18 22:32:40 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:32:40 - INFO - services.user_service - change_phone:104 - Phone updated for user mary84 (id: 1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:32:40 - INFO - user_script - profile_flow:533 - Phone changed for user_id: 1fabde47e5104ab3ba34ecee9a2645f3 to 09210491768
+2026-05-18 22:32:43 - INFO - services.user_service - get_user_profile:224 - User profile retrieved for user_id '1fabde47e5104ab3ba34ecee9a2645f3'
+2026-05-18 22:32:50 - ERROR - services.user_service - change_phone:100 - Change phone failed for user '1fabde47e5104ab3ba34ecee9a2645f3': Please enter a valid phone number (e.g., 09123456789) or leave it blank.
+2026-05-18 22:32:50 - ERROR - user_script - profile_flow:539 - Error changing phone: Please enter a valid phone number (e.g., 09123456789) or leave it blank.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 530, in profile_flow
+    change_phone(user.id, new_phone)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\user_service.py", line 98, in change_phone
+    user.phone = new_phone
+    ^^^^^^^^^^
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 127, in phone
+    raise InvalidPhoneNumberError
+utils.exceptions.InvalidPhoneNumberError: Please enter a valid phone number (e.g., 09123456789) or leave it blank.
+2026-05-18 22:33:25 - INFO - services.auth_service - login_user:118 - User logged in successfully: mary84 (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:33:25 - INFO - user_script - login_flow:102 - User logged in: mary84
+2026-05-18 22:39:38 - INFO - services.auth_service - login_user:118 - User logged in successfully: mary84 (id=1fabde47e5104ab3ba34ecee9a2645f3)
+2026-05-18 22:39:38 - INFO - user_script - login_flow:102 - User logged in: mary84
+2026-05-18 22:40:02 - INFO - storage.json_storage - save_data:57 - File C:\Users\ASIA\Desktop\cinema_ticket\data\users.json saved successfully
+2026-05-18 22:40:02 - INFO - services.user_service - change_password:204 - Password successfully changed for user 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:40:02 - INFO - user_script - profile_flow:551 - Password changed for user_id: 1fabde47e5104ab3ba34ecee9a2645f3
+2026-05-18 22:40:25 - ERROR - services.user_service - change_password:199 - Failed to change password for user_id '1fabde47e5104ab3ba34ecee9a2645f3': Password must be at least 8 characters.
+2026-05-18 22:40:25 - ERROR - user_script - profile_flow:557 - Error changing password: Password must be at least 8 characters.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 549, in profile_flow
+    change_password(user.id, current_password, new_password, confirm_password)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\user_service.py", line 197, in change_password
+    user.set_password(new_password)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\core\user.py", line 207, in set_password
+    raise InvalidPasswordError("Password must be at least 8 characters.")
+utils.exceptions.InvalidPasswordError: Password must be at least 8 characters.
+2026-05-18 22:40:36 - WARNING - services.user_service - change_password:184 - Failed to change password for user_id '1fabde47e5104ab3ba34ecee9a2645f3'.Wrong password
+2026-05-18 22:40:36 - ERROR - user_script - profile_flow:557 - Error changing password: The current password you entered is incorrect.
+Traceback (most recent call last):
+  File "C:\Users\ASIA\Desktop\cinema_ticket\user_script.py", line 549, in profile_flow
+    change_password(user.id, current_password, new_password, confirm_password)
+  File "C:\Users\ASIA\Desktop\cinema_ticket\services\user_service.py", line 185, in change_password
+    raise WrongPasswordError()
+utils.exceptions.WrongPasswordError: The current password you entered is incorrect.
+2026-05-18 22:41:49 - INFO - __main__ - admin_login:21 - Admin logged in successfully.

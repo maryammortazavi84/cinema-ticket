@@ -18,4 +18,4 @@ class AgeRating(str, Enum):
 
     @property
     def min_age(self) -> int:
-        return (self.value)
+        return int(self.value)

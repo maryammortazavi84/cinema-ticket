@@ -13,6 +13,7 @@ from utils.exceptions import (
     InvalidMovieIdError,
     InvalidSeatError,
 )
+from decimal import Decimal
 
 logger = get_logger(__name__)
 
@@ -23,6 +24,7 @@ class ShowTime:
         movie_id: str,
         start_time: datetime,
         hall_name: str,
+        price: Decimal,
         showtime_id: str | None = None
         ):
         """Initializes a ShowTime instance with validation and logging.
@@ -38,6 +40,7 @@ class ShowTime:
         self.start_time = start_time
         self.hall_name = hall_name
         self.seats: list[Seat] = self._generate_seats()
+        self.price = Decimal(str(price))
 
     @property
     def showtime_id(self) -> str:
@@ -79,6 +82,15 @@ class ShowTime:
             raise InvalidHallNameError(value)
         self._hall_name = value
 
+    @property
+    def price(self) -> Decimal:
+        return self._price
+    @price.setter
+    def price(self, value: Decimal) -> None:
+        if not isinstance(value, Decimal) or value < Decimal("0.00"):
+            raise ValueError(f"Invalid price: {value}")
+        self._price = value
+
     # seats are generated based on hall configuration, so no setter for seats
     def _generate_seats(self) -> list[Seat]:
         # For simplicity, we assume each hall has 5 rows (A-E) and 10 seats per row (1-10)
@@ -107,6 +119,7 @@ class ShowTime:
             "start_time": self.start_time.isoformat(),
             "hall_name": self.hall_name,
             "seats": [seat.to_dict() for seat in self.seats],
+            "price": str(self.price)
         }
     
     @classmethod
@@ -116,7 +129,8 @@ class ShowTime:
             movie_id=data["movie_id"],
             start_time=datetime.fromisoformat(data["start_time"]),
             hall_name=data["hall_name"],
-            showtime_id=data["showtime_id"]
+            showtime_id=data["showtime_id"],
+            price=Decimal(str(data["price"]))
         )
         showtime.seats = [Seat.from_dict(seat_data) for seat_data in data.get("seats", [])]
         return showtime
@@ -127,5 +141,6 @@ class ShowTime:
             f"Movie ID: {self.movie_id}\n"
             f"Start Time: {self.start_time}\n"
             f"Hall Name: {self.hall_name}\n"
-            f"Available Seats: {len(self.get_available_seats())}/{len(self.seats)}"
+            f"Available Seats: {len(self.get_available_seats())}/{len(self.seats)}\n"
+            f"Price: ${self.price}"
         )
